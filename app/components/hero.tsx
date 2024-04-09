@@ -1,4 +1,6 @@
 "use client";
+import { useMemo, useCallback } from "react";
+import { motion } from "framer-motion";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import Image from "next/image";
@@ -37,12 +39,13 @@ const images = [
 ];
 
 const Hero = () => {
-  const [sliderRef] = useKeenSlider<HTMLDivElement>(
+  const [sliderRef, slider] = useKeenSlider<HTMLDivElement>(
     {
       loop: true,
+      initial: 0,
     },
     [
-      (slider) => {
+      useCallback((slider) => {
         let timeout: ReturnType<typeof setTimeout>;
         let mouseOver = false;
         function clearNextTimeout() {
@@ -65,18 +68,28 @@ const Hero = () => {
             nextTimeout();
           });
           nextTimeout();
+          slider.slides.forEach((slide) => {
+            slide.style.display = "block";
+          });
         });
         slider.on("dragStarted", clearNextTimeout);
         slider.on("animationEnded", nextTimeout);
         slider.on("updated", nextTimeout);
-      },
+      }, []),
     ]
   );
+
+  const memoizedSliderRef = useMemo(() => sliderRef, [sliderRef]);
+
   return (
-    <>
-      <div ref={sliderRef} className="keen-slider">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+    >
+      <div ref={memoizedSliderRef} className="keen-slider">
         {images.map((image) => (
-          <div key={image.id} className="keen-slider__slide  h-[calc(85vh)]  ">
+          <div key={image.id} className="keen-slider__slide h-[calc(85vh)]">
             <Image
               alt={image.title}
               src={image.src}
@@ -88,7 +101,7 @@ const Hero = () => {
           </div>
         ))}
       </div>
-    </>
+    </motion.div>
   );
 };
 

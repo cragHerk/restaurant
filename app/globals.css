@@ -20,3 +20,10 @@ body {
   color: #232323;
   background-color: #ffdd33;
 }
+.keen-slider__slide {
+  display: none;
+}
+
+.keen-slider__slide:first-child {
+  display: block;
+}

@@ -5,15 +5,9 @@ const SectionHeader = () => {
   return (
     <div
       id="section-header"
-      className="bg-mid text-text  flex justify-center items-center h-24"
+      className="bg-section-image   flex justify-center items-center h-28"
     >
-      <div className="flex items-center ">
-        <span className="text-3xl mr-4">Satysfakcja </span>
-        <IoStar size={30} color="#FFEC33" />
-        <IoStar size={30} color="#FFEC33" />
-        <IoStar size={30} color="#FFEC33" />
-        <IoStar size={30} color="#FFEC33" />
-      </div>
+      <div className="flex items-center "></div>
     </div>
   );
 };

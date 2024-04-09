@@ -8,10 +8,10 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    default: "Korepetycje",
-    template: "%s | Korepetycje",
+    default: "TWINS restaurant",
+    template: "%s | TWINS restaurant",
   },
-  description: "Korepetycje z matematyki angielskiego ",
+  description: "Restauracja, Zator, Poland, Energylandia ",
 };
 
 export default function RootLayout({

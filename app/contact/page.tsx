@@ -6,7 +6,7 @@ import {
 } from "react-icons/ai";
 import Link from "next/link";
 export const metadata = {
-  title: "Kontakt",
+  title: "KONTAKT",
 };
 export default function Contact() {
   return (

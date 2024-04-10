@@ -86,10 +86,14 @@ const Hero = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
+      
     >
-      <div ref={memoizedSliderRef} className="keen-slider">
+      <div ref={memoizedSliderRef} className="keen-slider ">
         {images.map((image) => (
-          <div key={image.id} className="keen-slider__slide h-[calc(85vh)]">
+          <div
+            key={image.id}
+            className="keen-slider__slide h-[calc(85vh)]  "
+          >
             <Image
               alt={image.title}
               src={image.src}

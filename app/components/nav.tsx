@@ -17,7 +17,7 @@ const Nav = () => {
     setNav(!nav);
   };
   return (
-    <nav className="z-10 fixed w-screen flex items-center justify-between h-24  bg-nav-image  ">
+    <nav className="z-10 fixed w-screen flex items-center justify-between h-[140px]  bg-nav-image  ">
       <div className="flex items-center">
         <Link href="/">
           <span className="text-2xl font-bold text-white p-4">LOGO</span>

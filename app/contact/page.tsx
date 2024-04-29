@@ -10,7 +10,7 @@ export const metadata = {
 };
 export default function Contact() {
   return (
-    <section className=" h-[calc(86.5vh)]  opacity-80">
+    <section className=" h-[calc(100vh-70px)]  opacity-80">
       <h1 className="text-3xl "></h1>
       <div className="flex justify-center "></div>
     </section>

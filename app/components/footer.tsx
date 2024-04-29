@@ -5,13 +5,17 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-footer-image text-white h-24 flex items-center ">
+    <footer className=" bg-footer-image text-white w-full h-24 flex items-center ">
       <div className="flex justify-start items-center ml-8 ">
         {" "}
-        <a className="mr-2" href="https://www.facebook.com/">
+        <a
+          className="mr-2"
+          href="https://www.facebook.com/"
+          aria-label="facebook"
+        >
           <LiaFacebookSquare size={30} color="#ffdd33" />
         </a>
-        <a href="https://www.instagram.com/">
+        <a href="https://www.instagram.com/" aria-label="instagram">
           {" "}
           <LiaInstagram size={30} color="#ffdd33" />
         </a>

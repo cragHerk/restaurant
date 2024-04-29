@@ -7,7 +7,7 @@ import { IoMdClose } from "react-icons/io";
 const links = [
   { label: "STRONA GŁÓWNA", href: "/" },
   { label: "MENU", href: "/menu" },
-  { label: "O NAS", href: "/aboutus" },
+
   { label: "LOKALIZACJA", href: "/location" },
   { label: "REZERWACJA", href: "/contact" },
 ];
@@ -38,7 +38,11 @@ const Nav = () => {
       </ul>
       {/*mobile nav */}
       <div className="md:hidden  mr-8 z-10" onClick={handleNav}>
-        {nav ? <IoMdClose size={30} /> : <GiHamburgerMenu size={30} />}
+        {nav ? (
+          <IoMdClose size={30} color="#FFD60A" />
+        ) : (
+          <GiHamburgerMenu size={30} color="#FFD60A" />
+        )}
       </div>
       <ul
         className={

@@ -12,10 +12,12 @@
     "framer-motion": "^11.0.25",
     "keen-slider": "^6.8.6",
     "next": "14.1.4",
-    "react": "^18",
+    "react": "^18.3.1",
     "react-dom": "^18",
     "react-icons": "^5.0.1",
-    "react-spinners": "^0.13.8"
+    "react-responsive": "^10.0.0",
+    "react-spinners": "^0.13.8",
+    "twin.macro": "^3.4.1"
   },
   "devDependencies": {
     "@types/node": "^20",

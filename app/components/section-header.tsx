@@ -1,5 +1,7 @@
 import Image from "next/image";
-import { IoStar } from "react-icons/io5";
+import { FaStar } from "react-icons/fa";
+import { FaStarHalf } from "react-icons/fa";
+import { FcGoogle } from "react-icons/fc";
 
 const SectionHeader = () => {
   return (

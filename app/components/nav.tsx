@@ -6,11 +6,11 @@ import { IoMdClose } from "react-icons/io";
 import Image from "next/image";
 
 const links = [
-  { label: "STRONA GŁÓWNA", href: "/" },
+  { label: "GŁÓWNA", href: "/" },
   { label: "MENU", href: "/menu" },
 
   { label: "LOKALIZACJA", href: "/location" },
-  { label: "REZERWACJA", href: "/contact" },
+  { label: "KONTAKT", href: "/contact" },
 ];
 const Nav = () => {
   const [nav, setNav] = useState(false);

@@ -10,12 +10,15 @@ const Footer = () => {
         {" "}
         <a
           className="mr-2"
-          href="https://www.facebook.com/"
+          href="https://www.facebook.com/people/Twins-Restaurant/100083409545578/"
           aria-label="facebook"
         >
           <LiaFacebookSquare size={30} color="#ffdd33" />
         </a>
-        <a href="https://www.instagram.com/" aria-label="instagram">
+        <a
+          href="https://www.instagram.com/twins_restaurant_zator/"
+          aria-label="instagram"
+        >
           {" "}
           <LiaInstagram size={30} color="#ffdd33" />
         </a>

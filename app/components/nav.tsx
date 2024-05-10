@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
+import Image from "next/image";
 
 const links = [
   { label: "STRONA GŁÓWNA", href: "/" },
@@ -20,7 +21,25 @@ const Nav = () => {
     <nav className="z-10 fixed w-screen flex items-center justify-between h-[140px]  bg-nav-image  ">
       <div className="flex items-center">
         <Link href="/">
-          <span className="text-2xl font-bold text-white p-4">LOGO</span>
+          <div className="flex">
+            <div className="text-2xl font-bold ml-[20px]   w-[80px] h-[80px]">
+              <Image
+                src="/logo.jpg"
+                width={100}
+                height={100}
+                alt="logo"
+                layout="responsive"
+                objectFit="cover"
+                className="rounded-full"
+              />
+            </div>
+            <div className="flex flex-col justify-center items-center text-white ml-4">
+              <span className="text-5xl font-serif">TWINS</span>
+              <span className="text-xs opacity-70 tracking-widest">
+                RESTAURANT
+              </span>
+            </div>
+          </div>
         </Link>
       </div>
 

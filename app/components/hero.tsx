@@ -89,7 +89,10 @@ const Hero = () => {
     >
       <div ref={memoizedSliderRef} className="keen-slider ">
         {images.map((image) => (
-          <div key={image.id} className="keen-slider__slide h-[calc(85vh)]  ">
+          <div
+            key={image.id}
+            className="keen-slider__slide lg:h-[calc(85vh)] h-auto  "
+          >
             <Image
               alt={image.title}
               src={image.src}

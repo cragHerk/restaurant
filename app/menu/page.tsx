@@ -5,26 +5,17 @@ import Image from "next/image";
 
 const Menu = () => {
   return (
-    <section className="h-screen lg:h-[calc(100vh-70px)]  ">
-      <div className="relative flex flex-col lg:flex-row justify-center items-center w-full h-full pt-[140px] ">
-        <div className="lg:mr-1 relative w-[400px] h-[300px] md:w-[650px] md:h-[500px]">
+    <section className="  ">
+      <div className=" pt-[140px] ">
+        <div className="w-[100vw] lg:h-[calc(70vh)] h-auto static ">
+          <span className="text-8xl absolute ">MENU</span>
           <Image
-            src="/menu/menu-1.png"
+            src="/2.jpg"
+            width={100}
+            height={100}
             alt="menu"
-            fill
-            style={{
-              objectFit: "contain",
-            }}
-          />
-        </div>
-        <div className="lg:ml-1 relative w-[400px] h-[300px] md:w-[650px] md:h-[500px]">
-          <Image
-            src="/menu/menu-2.png"
-            alt="menu"
-            fill
-            style={{
-              objectFit: "contain",
-            }}
+            layout="responsive"
+            objectFit="cover"
           />
         </div>
       </div>

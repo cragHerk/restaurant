@@ -5,8 +5,9 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className=" bg-footer-image text-white w-full h-[70px] flex items-center z-10 relative">
-      <div className="flex justify-start items-center ml-8 ">
+    <footer className=" bg-footer-image text-white w-full h-[70px] flex items-center z-10 relative pl-5 justify-between">
+      {" "}
+      <div className="flex">
         {" "}
         <a
           className="mr-2"
@@ -23,6 +24,9 @@ const Footer = () => {
           <LiaInstagram size={30} color="#ffdd33" />
         </a>
       </div>
+      <a className="mr-5" href="http://www.freepik.com">
+        Designed by Layerace / Freepik
+      </a>
     </footer>
   );
 };

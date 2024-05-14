@@ -17,12 +17,18 @@ const config: Config = {
         "footer-image": "url('/footer-triangle-bg.jpg')",
       },
       colors: {
+        background: "#a38954",
         gold: "#FFD60A",
         green: "#03A054",
-        black: "#1F271B",
+        black: "#201e20",
         grey: "#939F99",
         text: "#232323",
         white: "#F9FAFB",
+        g: "#a38954",
+      },
+
+      gridTemplateColumns: {
+        "2": "repeat(2, 330px)",
       },
     },
   },

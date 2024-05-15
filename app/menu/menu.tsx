@@ -11,9 +11,14 @@ const MenuComponent = () => {
         transition={{ duration: 0.5 }}
       >
         <div className="w-[100vw] lg:h-[calc(70vh)] h-auto static ">
-          <span className="text-8xl font-semibold absolute left-[calc(50vw-150px)] top-[50%]">
+          <motion.span
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+            className="text-8xl font-semibold absolute left-[calc(50vw-150px)] top-[50%]"
+          >
             MENU
-          </span>
+          </motion.span>
           <Image
             src="/2.jpg"
             width={100}

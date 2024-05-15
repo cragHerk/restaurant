@@ -29,7 +29,7 @@ const MenuComponent = () => {
           />
         </div>
       </motion.div>
-      <div
+      {/* <div
         id="menu-nav"
         className="w-full pt-[140px] flex items-center justify-center"
       >
@@ -68,8 +68,21 @@ const MenuComponent = () => {
             Alkohole
           </button>{" "}
         </div>
-      </div>
-      <div className="py-[40px]">
+      </div> */}
+      <div className="py-[140px]">
+        <div className="flex items-center text-white opacity-70 mb-4 ">
+          {" "}
+          <Image
+            src="/leaf.svg"
+            width={30}
+            height={30}
+            alt="leaf"
+            className="mr-4"
+          />
+          <span>Danie wegetariańskie</span>
+          <span className="ml-9">Wykaz alergenów dostępny u obsługi</span>
+        </div>
+
         <div className="md:grid md:grid-cols-2 md:gap-[50px]  lg:grid-cols-3 ">
           <div id="starter" className="flex flex-col w-[320px]">
             <div className="w-[320px] h-[1px] bg-g my-2"></div>

@@ -1,18 +1,12 @@
-import {
-  AiFillFacebook,
-  AiFillInstagram,
-  AiFillPhone,
-  AiFillMail,
-} from "react-icons/ai";
-import Link from "next/link";
-export const metadata = {
+import { Metadata } from "next";
+import Contact from "./contact";
+export const metadata: Metadata = {
   title: "KONTAKT",
+  description: "KONTAKT",
 };
-export default function Contact() {
-  return (
-    <section className=" h-[calc(100vh-70px)]  opacity-80">
-      <h1 className="text-3xl "></h1>
-      <div className="flex justify-center "></div>
-    </section>
-  );
-}
+
+const page = () => {
+  return <Contact />;
+};
+
+export default page;

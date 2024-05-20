@@ -10,6 +10,8 @@ const links = [
   { label: "MENU", href: "/menu" },
 
   { label: "LOKALIZACJA", href: "/location" },
+  { label: "IMPREZY OKOLICZNOŚCIOWE", href: "/contact" },
+  { label: "GALERIA", href: "/contact" },
   { label: "KONTAKT", href: "/contact" },
 ];
 const Nav = () => {
@@ -18,7 +20,7 @@ const Nav = () => {
     setNav(!nav);
   };
   return (
-    <nav className="z-10 fixed w-screen flex items-center justify-between h-[140px]  bg-nav-image  ">
+    <nav className="z-20 fixed w-screen flex items-center justify-between h-[140px]  bg-nav-image  ">
       <div className="flex items-center">
         <Link href="/">
           <div className="flex">
@@ -43,7 +45,7 @@ const Nav = () => {
         </Link>
       </div>
 
-      <ul className="hidden md:flex bg-gold opacity-75 space-x-4 mr-24 pt-0.5 pb-1 px-2">
+      <ul className="hidden lg:flex bg-gold opacity-75 space-x-4 mr-24 pt-0.5 pb-1 px-2">
         {links.map((link) => (
           <li
             key={link.href}
@@ -56,7 +58,7 @@ const Nav = () => {
         ))}
       </ul>
       {/*mobile nav */}
-      <div className="md:hidden  mr-8 z-10" onClick={handleNav}>
+      <div className="lg:hidden  mr-8 z-30" onClick={handleNav}>
         {nav ? (
           <IoMdClose size={30} color="#FFD60A" />
         ) : (
@@ -66,7 +68,7 @@ const Nav = () => {
       <ul
         className={
           nav
-            ? "fixed md:hidden right-0 top-[90px] w-[100%] h-screen   ease-in-out duration-500"
+            ? "fixed lg:hidden right-0 top-[140px] w-[100%] h-screen z-30   ease-in-out duration-500"
             : "ease-in-out w-[100%] duration-500 fixed  right-0 top-[-100%]"
         }
       >

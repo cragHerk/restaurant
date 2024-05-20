@@ -7,7 +7,7 @@ const SectionHeader = () => {
   return (
     <div
       id="section-header"
-      className="bg-section-image h-[220px] md:h-[145px] lg:h-28 flex-wrap flex justify-center pt-[10px] lg:pt-0 lg:items-center "
+      className="bg-black h-[220px] md:h-[145px] lg:h-[100px] flex-wrap flex justify-center pt-[10px] lg:pt-0 lg:items-center "
     >
       <div className="flex flex-wrap items-center justify-around h-14 w-full">
         <div className=" flex items-center justify-center bg-gold h-14 w-[330px] mt-1 sm:mt-0 lg:mt-0 mb-3 lg:mb:0">

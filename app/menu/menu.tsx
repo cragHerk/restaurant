@@ -1,26 +1,28 @@
 "use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useMediaQuery } from "react-responsive";
 const MenuComponent = () => {
+  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   return (
     <section className="bg-black text-g flex flex-col justify-center items-center w-full truncate">
       <motion.div
-        className=" pt-[140px] "
+        className=" pt-[140px]  "
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <div className="w-[100vw] lg:h-[calc(70vh)] h-auto static ">
+        <div className="w-[100vw] h-[300px]  lg:h-[590px] overflow-hidden static ">
           <motion.span
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.5 }}
-            className="text-8xl font-semibold absolute left-[calc(50vw-150px)] top-[50%]"
+            className="text-8xl font-semibold absolute left-[calc(50vw-150px)] top-[230px] lg:top-[50%] font-serif"
           >
             MENU
           </motion.span>
           <Image
-            src="/2.jpg"
+            src={isMobile ? "/menu/pasta-mb.jpg" : "/menu/pasta.jpg"}
             width={100}
             height={100}
             alt="menu"
@@ -69,8 +71,8 @@ const MenuComponent = () => {
           </button>{" "}
         </div>
       </div> */}
-      <div className="py-[140px]">
-        <div className="flex items-center text-white opacity-70 mb-4 ">
+      <div className="py-[140px] flex flex-col justify-center items-center">
+        <div className="flex flex-wrap items-center justify-center text-white opacity-70 mb-4 ">
           {" "}
           <Image
             src="/leaf.svg"

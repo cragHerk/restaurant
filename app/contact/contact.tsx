@@ -1,10 +1,5 @@
 "use client";
-import {
-  AiFillFacebook,
-  AiFillInstagram,
-  AiFillPhone,
-  AiFillMail,
-} from "react-icons/ai";
+
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -18,7 +13,7 @@ export default function Contact() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <div className="w-[100vw] lg:h-[calc(70vh)] h-auto static ">
+        <div className="w-[100vw] lg:h-[calc(100vh-140px)] h-auto static ">
           <motion.span
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -28,7 +23,7 @@ export default function Contact() {
             KONTAKT
           </motion.span>
           <Image
-            src="/2.jpg"
+            src="/contact/contact.png"
             width={100}
             height={100}
             alt="menu"

@@ -4,41 +4,23 @@ import { motion } from "framer-motion";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import Image from "next/image";
+import { useMediaQuery } from "react-responsive";
 
 const images = [
   {
     id: 1,
-    src: "/hero/hero (1).jpg",
+    mb: "/hero/mb-1.jpg",
+    lg: "/hero/lg-1.jpg",
     title: "1.",
   },
-  {
-    id: 2,
-    src: "/hero/hero (2).jpg",
-    title: "2",
-  },
-  {
-    id: 3,
-    src: "/hero/hero (3).jpg",
-    title: "3",
-  },
-  {
-    id: 4,
-    src: "/hero/hero (4).jpg",
-    title: "4",
-  },
-  {
-    id: 5,
-    src: "/hero/hero (5).jpg",
-    title: "5",
-  },
-  {
-    id: 6,
-    src: "/hero/hero (6).jpg",
-    title: "6",
-  },
+  { id: 2, mb: "/hero/mb-2.jpg", lg: "/hero/lg-2.jpg", title: "2" },
+  { id: 3, mb: "/hero/mb-3.jpg", lg: "/hero/lg-3.jpg", title: "3" },
+  { id: 4, mb: "/hero/mb-4.jpg", lg: "/hero/lg-4.jpg", title: "4" },
+  { id: 5, mb: "/hero/mb-5.jpg", lg: "/hero/lg-5.jpg", title: "5" },
 ];
 
 const Hero = () => {
+  const isMobile = useMediaQuery({ query: "(max-width: 1200px)" });
   const [sliderRef, slider] = useKeenSlider<HTMLDivElement>(
     {
       loop: true,
@@ -86,16 +68,17 @@ const Hero = () => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
+      className="pt-[140px]"
     >
       <div ref={memoizedSliderRef} className="keen-slider  ">
         {images.map((image) => (
           <div
             key={image.id}
-            className="keen-slider__slide lg:h-[calc(85vh)] h-auto  "
+            className="keen-slider__slide h-[calc(100vh-140px)]  lg:h-[calc(100vh-240px)]  "
           >
             <Image
               alt={image.title}
-              src={image.src}
+              src={isMobile ? image.mb : image.lg}
               width={100}
               height={100}
               layout="responsive"

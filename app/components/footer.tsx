@@ -1,11 +1,10 @@
 import React from "react";
 import { LiaFacebookSquare } from "react-icons/lia";
 import { LiaInstagram } from "react-icons/lia";
-import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className=" bg-footer-image text-white w-full h-[70px] flex items-center z-10 relative pl-5 justify-between">
+    <footer className=" bg-black text-white w-full h-[70px] flex items-center z-10 relative pl-5 justify-between">
       {" "}
       <div className="flex">
         {" "}

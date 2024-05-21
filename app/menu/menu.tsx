@@ -31,7 +31,7 @@ const MenuComponent = () => {
           />
         </div>
       </motion.div>
-      <div
+      {/* <div
         id="menu-nav"
         className="w-full pt-[140px] flex items-center justify-center"
       >
@@ -70,7 +70,7 @@ const MenuComponent = () => {
             Alkohole
           </button>{" "}
         </div>
-      </div>
+      </div> */}
       <div className="py-[140px] flex flex-col justify-center items-center">
         <div className="flex flex-wrap items-center justify-center text-white opacity-70 mb-4 ">
           {" "}

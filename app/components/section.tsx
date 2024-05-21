@@ -83,7 +83,7 @@ const Section = () => {
           ref={ref5}
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: inView5 ? 1 : 0, x: 0 }}
-          transition={{ duration: 0.5, delay: 0.3 }}
+          transition={{ duration: 0.5, delay: 0.25 }}
           className=" hidden md:block md:absolute left-2/4 top-[75px] z-10"
         >
           <Image src="/m.jpg" width={400} height={400} alt="section" />

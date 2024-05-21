@@ -1,5 +1,5 @@
 "use client";
-import { useMemo, useCallback } from "react";
+import { useMemo, useCallback, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
@@ -20,7 +20,15 @@ const images = [
 ];
 
 const Hero = () => {
-  const isMobile = useMediaQuery({ query: "(max-width: 1200px)" });
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 1200px)");
+    const updateMatch = () => setIsMobile(mediaQuery.matches);
+    mediaQuery.addListener(updateMatch);
+    updateMatch();
+    return () => mediaQuery.removeListener(updateMatch);
+  }, []);
   const [sliderRef, slider] = useKeenSlider<HTMLDivElement>(
     {
       loop: true,

@@ -25,9 +25,9 @@ const Hero = () => {
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 1200px)");
     const updateMatch = () => setIsMobile(mediaQuery.matches);
-    mediaQuery.addListener(updateMatch);
+    mediaQuery.addEventListener("change", updateMatch);
     updateMatch();
-    return () => mediaQuery.removeListener(updateMatch);
+    return () => mediaQuery.removeEventListener("change", updateMatch);
   }, []);
   const [sliderRef, slider] = useKeenSlider<HTMLDivElement>(
     {

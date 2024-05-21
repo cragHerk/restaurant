@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 import Contact from "./contact";
 export const metadata: Metadata = {
-  title: "KONTAKT",
-  description: "KONTAKT",
+  title: "IMPREZY OKOLICZNOŚCIOWE",
+  description: "IMPREZY OKOLICZNOŚCIOWE",
 };
 
 const page = () => {

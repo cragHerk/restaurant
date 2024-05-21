@@ -5,14 +5,14 @@ import { useMediaQuery } from "react-responsive";
 const MenuComponent = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   return (
-    <section className="bg-black text-g flex flex-col justify-center items-center w-full truncate">
+    <section className="bg-black z-10 text-g flex flex-col justify-center items-center w-full truncate">
       <motion.div
         className=" pt-[140px]  "
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <div className="w-[100vw] h-[300px]  lg:h-[590px] overflow-hidden static ">
+        <div className="w-[100vw] h-[300px]  lg:h-[500px] overflow-hidden static ">
           <motion.span
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -31,7 +31,7 @@ const MenuComponent = () => {
           />
         </div>
       </motion.div>
-      {/* <div
+      <div
         id="menu-nav"
         className="w-full pt-[140px] flex items-center justify-center"
       >
@@ -70,7 +70,7 @@ const MenuComponent = () => {
             Alkohole
           </button>{" "}
         </div>
-      </div> */}
+      </div>
       <div className="py-[140px] flex flex-col justify-center items-center">
         <div className="flex flex-wrap items-center justify-center text-white opacity-70 mb-4 ">
           {" "}

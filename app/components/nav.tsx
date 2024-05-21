@@ -8,11 +8,9 @@ import Image from "next/image";
 const links = [
   { label: "GŁÓWNA", href: "/" },
   { label: "MENU", href: "/menu" },
-
   { label: "LOKALIZACJA", href: "/location" },
-  { label: "IMPREZY OKOLICZNOŚCIOWE", href: "/contact" },
-  { label: "GALERIA", href: "/contact" },
-  { label: "KONTAKT", href: "/contact" },
+  { label: "IMPREZY OKOLICZNOŚCIOWE", href: "/party" },
+  { label: "GALERIA", href: "/gallery" },
 ];
 const Nav = () => {
   const [nav, setNav] = useState(false);
@@ -20,7 +18,7 @@ const Nav = () => {
     setNav(!nav);
   };
   return (
-    <nav className="z-20 fixed w-screen flex items-center justify-between h-[140px]  bg-nav-image  ">
+    <nav className="z-20 fixed w-screen flex items-center justify-between h-[140px]  bg-nav-image bg-cover  ">
       <div className="flex items-center">
         <Link href="/">
           <div className="flex">

@@ -36,8 +36,8 @@ const Location = () => {
             </a>
             <div className="flex flex-col justify-center items-center text-left w-[200px] lg:w-[340px]">
               <h2 className="font-bold text-xl py-6">Godziny otwarcia:</h2>
-              <span>poniedziałek-piątek: 9.00-20.00</span>
-              <span>sobota-niedziela: 10.00-21.00</span>
+              <span>poniedziałek-piątek: 16.00-21.00</span>
+              <span>sobota-niedziela: 16.00-21.00</span>
             </div>
           </motion.div>
           <motion.div

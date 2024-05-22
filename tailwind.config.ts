@@ -12,10 +12,7 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        "nav-image": "url('/nav.jpg')",
-        "section-image": "url('/bg2.jpeg')",
-        "section-bg": "url('/m.jpg')",
-        "footer-image": "url('/footer-triangle-bg.jpg')",
+        "nav-image": "url('/nav.png')",
       },
       colors: {
         background: "#a38954",

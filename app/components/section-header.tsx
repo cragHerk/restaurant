@@ -10,7 +10,7 @@ const SectionHeader = () => {
       className="bg-black h-[220px] md:h-[145px] lg:h-[100px] flex-wrap flex justify-center pt-[10px] lg:pt-0 lg:items-center "
     >
       <div className="flex flex-wrap items-center justify-around h-14 w-full">
-        <div className=" flex items-center justify-center bg-gold h-14 w-[330px] mt-1 sm:mt-0 lg:mt-0 mb-3 lg:mb:0">
+        <div className=" flex items-center justify-center bg-gold opacity-60 h-14 w-[330px] mt-1 sm:mt-0 lg:mt-0 mb-3 lg:mb:0">
           <span className="font-bold text-2xl flex items-center">
             2 km od Energylandii{" "}
             <Image
@@ -22,7 +22,7 @@ const SectionHeader = () => {
             />
           </span>
         </div>
-        <div className="flex items-center justify-center bg-gold h-14 w-[330px]  mb-3 lg:mb:0">
+        <div className="flex items-center justify-center bg-gold opacity-60 h-14 w-[330px]  mb-3 lg:mb:0">
           <span className="font-bold text-2xl flex items-center ">
             <Image
               src="italy-flag.svg"
@@ -34,7 +34,7 @@ const SectionHeader = () => {
             Kuchnia włoska
           </span>
         </div>
-        <div className="  flex items-center justify-center bg-gold h-14 w-[330px] mb-3 lg:mb:0 ">
+        <div className="  flex items-center justify-center bg-gold opacity-60 h-14 w-[330px] mb-3 lg:mb:0 ">
           <span className=" font-bold text-2xl flex items-center">
             <FaStar />
             <FaStar />

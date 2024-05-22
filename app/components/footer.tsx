@@ -13,14 +13,14 @@ const Footer = () => {
           href="https://www.facebook.com/people/Twins-Restaurant/100083409545578/"
           aria-label="facebook"
         >
-          <LiaFacebookSquare size={30} color="#ffdd33" />
+          <LiaFacebookSquare size={30} color="#a38954" />
         </a>
         <a
           href="https://www.instagram.com/twins_restaurant_zator/"
           aria-label="instagram"
         >
           {" "}
-          <LiaInstagram size={30} color="#ffdd33" />
+          <LiaInstagram size={30} color="#a38954" />
         </a>
       </div>
       <a className="mr-5" href="http://www.freepik.com">

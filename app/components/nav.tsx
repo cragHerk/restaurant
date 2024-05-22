@@ -73,7 +73,7 @@ const Nav = () => {
         {links.map((link) => (
           <li
             key={link.href}
-            className="cursor-pointer  w-18 p-2 bg-gold flex font-bold"
+            className="cursor-pointer  w-18 p-2 bg-gold opacity-80 flex font-bold"
           >
             <Link href={link.href} legacyBehavior>
               <span className="hover:underline ">{link.label}</span>

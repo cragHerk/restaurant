@@ -1,12 +1,12 @@
 import { Metadata } from "next";
-import MenuComponent from "./menu";
+import Menu from "./menu";
 export const metadata: Metadata = {
   title: "MENU",
   description: "Menu of Twins restaurant",
 };
 
 const page = () => {
-  return <MenuComponent />;
+  return <Menu />;
 };
 
 export default page;

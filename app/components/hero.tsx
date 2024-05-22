@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import Image from "next/image";
-import { useMediaQuery } from "react-responsive";
 
 const images = [
   {

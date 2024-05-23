@@ -23,6 +23,7 @@ const config: Config = {
         text: "#232323",
         white: "#F9FAFB",
         g: "#a38954",
+        gt: "#ac9465",
       },
 
       gridTemplateColumns: {

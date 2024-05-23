@@ -10,9 +10,9 @@ const Nav = ({
 }) => {
   return (
     <div className="rounded bg-g sm:p-2 mb-4 flex-col lg:flex lg:flex-row">
-      <a onClick={handleAllTypes}>
+      <a onClick={handleAllTypes} className="">
         <Image
-          className=" p-1 lg:mx-2 my-2 lg:my-0 cursor-pointer sm:border sm:border-black sm:rounded-sm"
+          className=" p-1 lg:mx-2 my-2 lg:my-0 cursor-pointer sm:border sm:border-black sm:rounded-sm transition-colors hover:bg-gt active:bg-gold focus:ring focus:ring-gold"
           src="/menu/nav/all.svg"
           width={35}
           height={35}
@@ -21,7 +21,7 @@ const Nav = ({
       </a>
       <a onClick={() => setSelectedType("food")}>
         <Image
-          className=" p-1 lg:mx-2 my-2 lg:my-0 cursor-pointer sm:border sm:border-black sm:rounded-sm"
+          className=" p-1 lg:mx-2 my-2 lg:my-0 cursor-pointer sm:border sm:border-black sm:rounded-sm transition-colors hover:bg-gt active:bg-gold focus:ring focus:ring-gold"
           src="/menu/nav/food.svg"
           width={35}
           height={35}
@@ -30,7 +30,7 @@ const Nav = ({
       </a>
       <a onClick={() => setSelectedType("drink")}>
         <Image
-          className=" p-1 lg:mx-2 my-2 lg:my-0 cursor-pointer sm:border sm:border-black sm:rounded-sm"
+          className=" p-1 lg:mx-2 my-2 lg:my-0 cursor-pointer sm:border sm:border-black sm:rounded-sm transition-colors hover:bg-gt active:bg-gold focus:ring focus:ring-gold"
           src="/menu/nav/drink.svg"
           width={35}
           height={35}
@@ -39,7 +39,7 @@ const Nav = ({
       </a>
       <a onClick={() => setSelectedType("alcohol")}>
         <Image
-          className=" p-1 lg:mx-2 my-2 lg:my-0 cursor-pointer sm:border sm:border-black sm:rounded-sm"
+          className=" p-1 lg:mx-2 my-2 lg:my-0 cursor-pointer sm:border sm:border-black sm:rounded-sm transition-colors hover:bg-gt active:bg-gold focus:ring focus:ring-gold"
           src="/menu/nav/alco.svg"
           width={35}
           height={35}
@@ -48,7 +48,7 @@ const Nav = ({
       </a>
       <a onClick={() => setSelectedType("beer")}>
         <Image
-          className=" p-1 lg:mx-2 my-2 lg:my-0 cursor-pointer sm:border sm:border-black sm:rounded-sm"
+          className=" p-1 lg:mx-2 my-2 lg:my-0 cursor-pointer sm:border sm:border-black sm:rounded-sm transition-colors hover:bg-gt active:bg-gold focus:ring focus:ring-gold"
           src="/menu/nav/beer.svg"
           width={35}
           height={35}
@@ -57,7 +57,7 @@ const Nav = ({
       </a>
       <a onClick={() => setSelectedType("wine")}>
         <Image
-          className=" p-1 lg:mx-2 my-2 lg:my-0 cursor-pointer sm:border sm:border-black sm:rounded-sm"
+          className=" p-1 lg:mx-2 my-2 lg:my-0 cursor-pointer sm:border sm:border-black sm:rounded-sm transition-colors hover:bg-gt active:bg-gold focus:ring focus:ring-gold"
           src="/menu/nav/wine.svg"
           width={35}
           height={35}
@@ -66,7 +66,7 @@ const Nav = ({
       </a>
       <a onClick={() => setSelectedType("pizza")}>
         <Image
-          className=" p-1 lg:mx-2 my-2 lg:my-0 cursor-pointer sm:border sm:border-black sm:rounded-sm"
+          className=" p-1 lg:mx-2 my-2 lg:my-0 cursor-pointer sm:border sm:border-black sm:rounded-sm transition-colors hover:bg-gt active:bg-gold focus:ring focus:ring-gold"
           src="/menu/nav/pizza.svg"
           width={35}
           height={35}

@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { useTranslations } from "next-intl";
-const Top = () => {
+
+const Top = ({ translations }: any) => {
   // const t = useTranslations("SectionHeader");
   return (
     <div className="flex flex-wrap items-center justify-center text-white opacity-70 mb-4  ">
@@ -12,8 +12,8 @@ const Top = () => {
         alt="leaf"
         className="mr-4"
       />
-      <span>Danie wegetariańskie</span>
-      <span className="ml-9">Wykaz alergenów dostępny u obsługi</span>
+      <span>{translations.title1}</span>
+      <span className="ml-9">{translations.title2}</span>
     </div>
   );
 };

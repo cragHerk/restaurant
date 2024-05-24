@@ -6,7 +6,7 @@ import Header from "./menu-header";
 import Nav from "./menu-nav";
 import Top from "./menu-top";
 import { useState } from "react";
-const Menu = () => {
+const Menu = ({ translations }: any) => {
   const [selectedType, setSelectedType] = useState("");
   const handleAllTypes = () => {
     setSelectedType("");
@@ -21,7 +21,7 @@ const Menu = () => {
         />
       </div>
 
-      <Top />
+      <Top translations={translations} />
       <div className="md:grid md:grid-cols-2 md:gap-[50px]  lg:grid-cols-3 ">
         {selectedType
           ? menuData

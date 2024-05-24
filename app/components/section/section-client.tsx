@@ -1,10 +1,11 @@
 "use client";
-import { useRef, useEffect, useState } from "react";
+
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import ContactButton from "../contact-button";
+import { useLocale } from "next-intl";
 
 const SectionClient = ({
   translations,
@@ -17,6 +18,7 @@ const SectionClient = ({
   };
 }) => {
   const contact = translations.contact;
+  const localActive = useLocale();
   const [ref1, inView1] = useInView();
   const [ref2, inView2] = useInView();
   const [ref3, inView3] = useInView();
@@ -72,7 +74,7 @@ const SectionClient = ({
           <span className="text-sm  text-white z-20 font-bold">
             {translations.title2}
           </span>
-          <Link href="/menu" className="relative z-40">
+          <Link href={`/${localActive}/menu`} className="relative z-40">
             <button
               className="w-[80px] p-1 m-2 rounded bg-white text-xl font-bold cursor-pointer"
               type="button"

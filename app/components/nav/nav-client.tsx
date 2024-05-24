@@ -60,7 +60,7 @@ const NavClient = ({
         </Link>
       </div>
 
-      <ul className="hidden lg:flex bg-gold opacity-75 space-x-4 mr-24 pt-0.5 pb-1 px-2 items-center">
+      <ul className="hidden lg:flex bg-g opacity-75 space-x-4 mr-24 pt-0.5 pb-1 px-2 items-center">
         {localeLinks.map((link) => (
           <li
             key={link.href}
@@ -74,11 +74,11 @@ const NavClient = ({
         <LocalSwitcher />
       </ul>
       {/*mobile nav */}
-      <div className="lg:hidden  mr-8 z-30" onClick={handleNav}>
+      <div className="relative lg:hidden  mr-8 z-30" onClick={handleNav}>
         {nav ? (
-          <IoMdClose size={30} color="#FFD60A" />
+          <IoMdClose size={30} color="#a38954" />
         ) : (
-          <GiHamburgerMenu size={30} color="#FFD60A" />
+          <GiHamburgerMenu size={30} color="#a38954" />
         )}
       </div>
       <ul
@@ -91,14 +91,16 @@ const NavClient = ({
         {localeLinks.map((link) => (
           <li
             key={link.href}
-            className="cursor-pointer  w-18 p-2 bg-gold opacity-80 flex font-bold"
+            className="cursor-pointer  w-18 p-2 bg-g  flex font-bold"
           >
             <Link href={link.href} legacyBehavior>
               <span className="hover:underline ">{link.label}</span>
             </Link>
           </li>
         ))}
-        <LocalSwitcher />
+        <li className="absolute right-[20px] top-[20px]">
+          <LocalSwitcher />
+        </li>
       </ul>
     </nav>
   );

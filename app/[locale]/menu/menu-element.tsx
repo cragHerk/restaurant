@@ -1,7 +1,10 @@
 import Image from "next/image";
 import { MenuTypes } from "./MenuTypes";
+import { useLocale } from "next-intl";
 
 const Element = ({ menuData }: { menuData: MenuTypes }) => {
+  const localActive = useLocale();
+
   return (
     <div id={menuData.id} className="flex flex-col w-[320px]">
       <div className="w-[320px] h-[1px] bg-g my-2"></div>
@@ -69,7 +72,7 @@ const Element = ({ menuData }: { menuData: MenuTypes }) => {
 
             {item.description && (
               <span className="text-white text-xs opacity-70 text-balance  ">
-                {item.description}
+                {item.description[localActive]}
               </span>
             )}
             {item.description1 && (

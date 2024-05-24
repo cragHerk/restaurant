@@ -1,17 +1,5 @@
-"use client";
-import React from "react";
-import Hero from "./components/hero";
-import Section from "./components/section";
-import SectionHeader from "./components/section-header";
+import { redirect } from "next/navigation";
 
-const HomePage: React.FC = () => {
-  return (
-    <>
-      <Hero />
-      <SectionHeader />
-      <Section />
-    </>
-  );
-};
-
-export default HomePage;
+export default function RootPage() {
+  redirect("/pl");
+}

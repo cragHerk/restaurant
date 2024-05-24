@@ -4,9 +4,19 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import ContactButton from "./contact-button";
+import ContactButton from "../contact-button";
 
-const Section = () => {
+const SectionClient = ({
+  translations,
+}: {
+  translations: {
+    title: string;
+    description: string;
+    title2: string;
+    contact: string;
+  };
+}) => {
+  const contact = translations.contact;
   const [ref1, inView1] = useInView();
   const [ref2, inView2] = useInView();
   const [ref3, inView3] = useInView();
@@ -27,7 +37,7 @@ const Section = () => {
           transition={{ duration: 0.5, delay: 0.25 }}
           className="text-2xl md:text-4xl font-bold font-serif mt-6 text-center"
         >
-          Zapraszamy do naszej restauracji
+          {translations.title}
         </motion.h1>
         <motion.span
           ref={ref2}
@@ -36,13 +46,7 @@ const Section = () => {
           transition={{ duration: 0.5, delay: 0.26 }}
           className="text-sm opacity-70 w-2/3 mt-6 text-center"
         >
-          Twins Restaurant to urokliwe miejsce znajdujace sie w poblizu
-          Największego Parku rozrywki w Polsce - Energylandia w Zatorze. Włoska
-          kuchnia, pyszna pizza, tradycyjne polskie akcenty oraz soczyste
-          burgery - tych pozycji nie zabraknie w naszym menu. Przestronna
-          klimatyzowana sala, przytulny taras, nowoczesny wystrój oraz
-          profesjonalna obsługa serwująca świeże dania z pewnością umili Państwu
-          chwile.
+          {translations.description}
         </motion.span>
         <motion.div
           ref={ref3}
@@ -51,7 +55,7 @@ const Section = () => {
           transition={{ duration: 0.5, delay: 0.27 }}
           className="p-2 mt-8 mb-[100px] rounded bg-white opacity-60 text-black"
         >
-          <ContactButton />
+          <ContactButton contact={contact} />
         </motion.div>
       </div>
 
@@ -66,7 +70,7 @@ const Section = () => {
           {" "}
           <h1 className=" text-7xl md:text-9xl font-serif z-20 ">MENU</h1>
           <span className="text-sm  text-white z-20 font-bold">
-            Zapraszamy do zakładki „Menu”
+            {translations.title2}
           </span>
           <Link href="/menu" className="relative z-40">
             <button
@@ -93,4 +97,4 @@ const Section = () => {
   );
 };
 
-export default Section;
+export default SectionClient;

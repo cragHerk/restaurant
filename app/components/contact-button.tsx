@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
@@ -9,7 +10,7 @@ import {
   AiFillMail,
 } from "react-icons/ai";
 
-const ContactButton = () => {
+const ContactButton = ({ contact }: any) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -19,7 +20,7 @@ const ContactButton = () => {
         onClick={() => setIsOpen(true)}
         className=" text-black  px-6 rounded-lg   font-bold"
       >
-        Kontakt
+        {contact}
       </button>
       <Popup isOpen={isOpen} setIsOpen={setIsOpen} />
     </div>

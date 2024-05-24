@@ -1,0 +1,33 @@
+{
+  "Nav": {
+    "main": "GŁÓWNA",
+    "menu": "MENU",
+    "location": "LOKALIZACJA",
+    "party": "IMPREZY OKOLICZNOŚCIOWE",
+    "gallery": "GALERIA"
+  },
+  "SectionHeader": {
+    "title1": "2 km od Energylandii",
+    "title2": "Kuchnia włoska",
+    "title3": "Recenzje Google"
+  },
+  "Section": {
+    "title": "Zapraszamy do naszej restauracji",
+    "description": "Twins Restaurant to urokliwe miejsce znajdujące się w pobliżu największego parku rozrywki w Polsce - Energylandia w Zatorze. Włoska kuchnia, pyszna pizza, tradycyjne polskie akcenty oraz soczyste burgery - tych pozycji nie zabraknie w naszym menu. Przestronna, klimatyzowana sala, przytulny taras, nowoczesny wystrój oraz profesjonalna obsługa serwująca świeże dania z pewnością umili Państwu chwile.",
+    "title2": "Zapraszamy do zakładki „Menu”",
+    "contact": "Kontakt"
+  },
+  "Top": {
+    "title1": "Danie wegetariańskie",
+    "title2": "Wykaz alergenów dostępny u obsługi"
+  },
+  "Location": {
+    "title1": "GODZINY OTWARCIA &",
+    "title2": "LOKALIZACJA",
+    "adress": "Adres restauracji to",
+    "map": "mapa",
+    "open": "Godziny otwarcia:",
+    "from": "poniedziałek-piątek: 16.00-21.00",
+    "to": "sobota-niedziela: 16.00-21.00"
+  }
+}

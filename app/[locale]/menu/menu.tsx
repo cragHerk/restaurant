@@ -4,7 +4,7 @@ import menuData from "./menu-data";
 import { MenuTypes } from "./MenuTypes";
 import Header from "./menu-header";
 import Nav from "./menu-nav";
-import Image from "next/image";
+import Top from "./menu-top";
 import { useState } from "react";
 const Menu = () => {
   const [selectedType, setSelectedType] = useState("");
@@ -21,18 +21,7 @@ const Menu = () => {
         />
       </div>
 
-      <div className="flex flex-wrap items-center justify-center text-white opacity-70 mb-4  ">
-        {" "}
-        <Image
-          src="/leaf.svg"
-          width={30}
-          height={30}
-          alt="leaf"
-          className="mr-4"
-        />
-        <span>Danie wegetariańskie</span>
-        <span className="ml-9">Wykaz alergenów dostępny u obsługi</span>
-      </div>
+      <Top />
       <div className="md:grid md:grid-cols-2 md:gap-[50px]  lg:grid-cols-3 ">
         {selectedType
           ? menuData

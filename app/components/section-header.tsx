@@ -1,9 +1,9 @@
 import Image from "next/image";
 import { FaStar } from "react-icons/fa";
 import { FaStarHalf } from "react-icons/fa";
-import { FcGoogle } from "react-icons/fc";
-
+import { useTranslations } from "next-intl";
 const SectionHeader = () => {
+  const t = useTranslations("SectionHeader");
   return (
     <div
       id="section-header"
@@ -12,9 +12,9 @@ const SectionHeader = () => {
       <div className="flex flex-wrap items-center justify-around h-14 w-full">
         <div className=" flex items-center justify-center bg-gold opacity-60 h-14 w-[330px] mt-1 sm:mt-0 lg:mt-0 mb-3 lg:mb:0">
           <span className="font-bold text-2xl flex items-center">
-            2 km od Energylandii{" "}
+            {t("title1")}
             <Image
-              src="roller-coaster.svg"
+              src="/roller-coaster.svg"
               width={30}
               height={30}
               alt="roller-coaster"
@@ -25,13 +25,13 @@ const SectionHeader = () => {
         <div className="flex items-center justify-center bg-gold opacity-60 h-14 w-[330px]  mb-3 lg:mb:0">
           <span className="font-bold text-2xl flex items-center ">
             <Image
-              src="italy-flag.svg"
+              src="/italy-flag.svg"
               width={30}
               height={30}
               alt="italy"
               className="mr-3"
             />
-            Kuchnia włoska
+            {t("title2")}
           </span>
         </div>
         <div className="  flex items-center justify-center bg-gold opacity-60 h-14 w-[330px] mb-3 lg:mb:0 ">
@@ -40,7 +40,7 @@ const SectionHeader = () => {
             <FaStar />
             <FaStar />
             <FaStar />
-            <FaStarHalf /> Recenzje Google
+            <FaStarHalf /> {t("title3")}
           </span>
         </div>
       </div>

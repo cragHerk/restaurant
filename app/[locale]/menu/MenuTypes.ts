@@ -8,7 +8,11 @@ type MenuItem = {
   bottle?: string;
   image?: string;
   vege?: boolean;
-  description?: string;
+  description?: {
+    pl: string;
+    en: string;
+    [key: string]: string;
+  };
   description1?: string;
   price1?: string;
   description2?: string;

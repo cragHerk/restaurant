@@ -1,0 +1,33 @@
+{
+  "Nav": {
+    "main": "MAIN",
+    "menu": "MENU",
+    "location": "LOCATION",
+    "party": "EVENTS",
+    "gallery": "GALLERY"
+  },
+  "SectionHeader": {
+    "title1": "2 km from Energylandia",
+    "title2": "Italian Cuisine ",
+    "title3": "Google Reviews"
+  },
+  "Section": {
+    "title": "Welcome to our restaurant",
+    "description": "Twins Restaurant is a charming place located near the Poland's largest amusement park - Energylandia in Zator. Italian cuisine, delicious pizza, traditional Polish accents and juicy burgers - you will not miss these items in our menu. Spacious air-conditioned room, cozy terrace, modern decor and professional service serving fresh dishes will surely make your moments.",
+    "title2": "Please visit the “Menu” tab",
+    "contact": "Contact"
+  },
+  "Top": {
+    "title1": "Vegetarian dish",
+    "title2": "List of allergens available from the staff"
+  },
+  "Location": {
+    "title1": "OPENING HOURS &",
+    "title2": "LOCATION",
+    "adress": "The address of the restaurant is",
+    "map": "map",
+    "open": "Opening Hours:",
+    "from": "Monday-Friday: 4.00-21.00 pm",
+    "to": "Saturday-Sunday: 16.00-21.00"
+  }
+}

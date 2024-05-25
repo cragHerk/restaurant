@@ -9,12 +9,12 @@ const Element = ({ menuData }: { menuData: MenuTypes }) => {
     <div id={menuData.id} className="flex flex-col w-[320px]">
       <div className="w-[320px] h-[1px] bg-g my-2"></div>
       <h2 className="text-3xl font-bold font-serif py-2">
-        {menuData.category}
+        {menuData.category[localActive]}
       </h2>
       <div className="w-[320px] h-[1px] bg-g my-2"></div>
       {menuData.burgerDescription && (
         <span className="text-white text-xs opacity-70 text-balance">
-          {menuData.burgerDescription}
+          {menuData.burgerDescription[localActive]}
         </span>
       )}
       <div className="relative px-1">
@@ -23,7 +23,7 @@ const Element = ({ menuData }: { menuData: MenuTypes }) => {
             {item.type && (
               <>
                 <h2 className="text-2xl text-white font-bold py-2">
-                  {item.type}
+                  {item.type[localActive]}
                 </h2>
                 <div className="w-[320px] h-[1px] bg-g my-2"></div>
               </>
@@ -32,9 +32,9 @@ const Element = ({ menuData }: { menuData: MenuTypes }) => {
             <div className="flex justify-between relative p-1">
               {item.name && (
                 <h3 className="text-xl  font-bold text-white flex flex-col">
-                  {item.name}
+                  {item.name[localActive]}
                   {item.header && (
-                    <span className="text-sm">{item.header}</span>
+                    <span className="text-sm">{item.header[localActive]}</span>
                   )}
                 </h3>
               )}
@@ -78,7 +78,7 @@ const Element = ({ menuData }: { menuData: MenuTypes }) => {
             {item.description1 && (
               <div className="flex justify-between ">
                 <span className="text-white text-xs opacity-70">
-                  {item.description1}
+                  {item.description1[localActive]}
                 </span>
                 <span>{item.price1}</span>
               </div>
@@ -86,7 +86,7 @@ const Element = ({ menuData }: { menuData: MenuTypes }) => {
             {item.description2 && (
               <div className="flex justify-between ">
                 <span className="text-white text-xs opacity-70">
-                  {item.description2}
+                  {item.description2[localActive]}
                 </span>
                 <span>{item.price2}</span>
               </div>
@@ -94,7 +94,7 @@ const Element = ({ menuData }: { menuData: MenuTypes }) => {
             {item.description3 && (
               <div className="flex justify-between ">
                 <span className="text-white text-xs opacity-70">
-                  {item.description3}
+                  {item.description3[localActive]}
                 </span>
                 <span>{item.price3}</span>
               </div>
@@ -102,7 +102,7 @@ const Element = ({ menuData }: { menuData: MenuTypes }) => {
             {item.description4 && (
               <div className="flex justify-between ">
                 <span className="text-white text-xs opacity-70">
-                  {item.description4}
+                  {item.description4[localActive]}
                 </span>
                 <span>{item.price4}</span>
               </div>

@@ -3,10 +3,16 @@ const menuData: MenuTypes[] = [
   {
     id: "1",
     type: "food",
-    category: "Przystawki",
+    category: {
+      pl: "Przystawki",
+      en: "Starters",
+    },
     items: [
       {
-        name: "Caprese",
+        name: {
+          pl: "Caprese",
+          en: "Caprese",
+        },
         price: "19zł",
         description: {
           pl: "pomidor, rukola, mozarella",
@@ -15,8 +21,11 @@ const menuData: MenuTypes[] = [
         vege: true,
       },
       {
-        name: "Ser camembert",
-        header: "panierowany",
+        name: {
+          pl: "Ser camembert",
+          en: "Camembert cheese",
+        },
+        header: { pl: "panierowany", en: "breaded" },
         price: "27zł",
         description: {
           pl: " mix sałat, żurawina",
@@ -25,7 +34,10 @@ const menuData: MenuTypes[] = [
         vege: true,
       },
       {
-        name: "Krewetki",
+        name: {
+          pl: "Krewetki",
+          en: "Shrimps",
+        },
         price: "39zł",
         description: {
           pl: " czosnek, masło, białe wino",
@@ -38,23 +50,35 @@ const menuData: MenuTypes[] = [
   {
     id: "2",
     type: "food",
-    category: "Zupy",
+    category: {
+      pl: "Zupy",
+      en: "Soups",
+    },
     items: [
       {
-        name: "Barszcz czerwony",
+        name: {
+          pl: "Barszcz czerwony",
+          en: "Red borscht",
+        },
         price: "22zł",
-        header: "z uszkami",
+        header: { pl: "z uszkami", en: "with ravioli" },
         vege: false,
       },
       {
-        name: "Krem czosnkowy",
+        name: {
+          pl: "Krem czosnkowy",
+          en: "Garlic cream",
+        },
         price: "22zł",
         vege: true,
       },
       {
-        name: "Krem z brokułów",
+        name: {
+          pl: "Krem z brokułów ",
+          en: "Cream of broccoli ",
+        },
         price: "22zł",
-        header: "z grzankami",
+        header: { pl: "z grzankami", en: "with croutons" },
         vege: true,
       },
     ],
@@ -62,18 +86,27 @@ const menuData: MenuTypes[] = [
   {
     id: "3",
     type: "food",
-    category: "Pierogi",
+    category: {
+      pl: "Pierogi",
+      en: "Dumplings",
+    },
     items: [
       {
-        name: "Pierogi z mięsem ",
+        name: {
+          pl: "Pierogi z mięsem ",
+          en: "Dumplings with meat",
+        },
         price: "32zł",
-        header: "okraszone cebulką",
+        header: { pl: "okraszone cebulką", en: "onion-topped" },
         vege: false,
       },
       {
-        name: "Pierogi ruskie ",
+        name: {
+          pl: "Pierogi ruskie",
+          en: "Russian dumplings",
+        },
         price: "32zł",
-        header: "z cebulką",
+        header: { pl: "z cebulką", en: "with onion" },
         vege: true,
       },
     ],
@@ -81,11 +114,17 @@ const menuData: MenuTypes[] = [
   {
     id: "4",
     type: "food",
-    category: "Premium",
+    category: {
+      pl: "Premium",
+      en: "Premium",
+    },
     items: [
       {
-        name: "Czarny burger ",
-        header: "z 23 karatowym złotem",
+        name: {
+          pl: "Czarny burger",
+          en: "Black burger",
+        },
+        header: { pl: "z 23-karatowym złotem", en: "with 23-karat gold" },
         price: "79zł",
         description: {
           pl: "Bułka pszenna czarna, wołowina, pancetta, rukola, pomidor, ogórek, cebula, cheddar, frytki belgijskie, krążki cebulowe, mix sałat",
@@ -95,8 +134,11 @@ const menuData: MenuTypes[] = [
         image: "/gold-bar.svg",
       },
       {
-        name: "Stek ",
-        header: "z angusa australijskiego",
+        name: {
+          pl: "Stek",
+          en: "Steak",
+        },
+        header: { pl: "z angusa australijskiego", en: "with Australian Angus" },
         price: "99zł",
         description: {
           pl: "Mix sałat, frytki belgijskie, grillowane warzywa, masło",
@@ -106,8 +148,11 @@ const menuData: MenuTypes[] = [
         image: "/beef.svg",
       },
       {
-        name: "Czarne tagilatelle ",
-        header: "z krewetkami",
+        name: {
+          pl: "Czarne tagilatelle",
+          en: "Black tagilatelle",
+        },
+        header: { pl: "z krewetkami", en: "with shrimps" },
         price: "48zł",
         description: {
           pl: "Czosnek, masło, białe wino",
@@ -121,10 +166,16 @@ const menuData: MenuTypes[] = [
   {
     id: "5",
     type: "food",
-    category: "Dania mięsne",
+    category: {
+      pl: "Dania mięsne",
+      en: "Meat dishes",
+    },
     items: [
       {
-        name: "Shoarma drobiowa",
+        name: {
+          pl: "Shoarma drobiowa",
+          en: "Poultry shoarma",
+        },
         price: "39zł",
         description: {
           pl: "Frytki, mix sałat,sos",
@@ -133,7 +184,10 @@ const menuData: MenuTypes[] = [
         vege: false,
       },
       {
-        name: "Grillowany schab z kością",
+        name: {
+          pl: "Grilowany schab z kością",
+          en: "Grilled pork loin on the bone",
+        },
         price: "47zł",
         description: {
           pl: "ziemnaki opiekane, selekcja sałat",
@@ -146,10 +200,16 @@ const menuData: MenuTypes[] = [
   {
     id: "6",
     type: "food",
-    category: "Makarony",
+    category: {
+      pl: "Makarony",
+      en: "Pastas",
+    },
     items: [
       {
-        name: "Penne rigatoni",
+        name: {
+          pl: "Penne rigatoni",
+          en: "Penne rigatoni",
+        },
         price: "39zł",
         description: {
           pl: "kurczak w sosie śmietanowym, szpinak, czosnek, parmezan",
@@ -158,7 +218,10 @@ const menuData: MenuTypes[] = [
         vege: false,
       },
       {
-        name: "Penne chorizo",
+        name: {
+          pl: "Penne chorizo",
+          en: "Penne chorizo",
+        },
         price: "42zł",
         description: {
           pl: "Hiszpańska kiełbasa chorizo, grillowane warzywa, parmezan",
@@ -167,7 +230,10 @@ const menuData: MenuTypes[] = [
         vege: false,
       },
       {
-        name: "Agilo olio",
+        name: {
+          pl: "Agilo olio",
+          en: "Agilo olio",
+        },
         price: "29zł",
         description: {
           pl: "Rukola, pomidorki koktajlowe, oliwa, czosnek",
@@ -176,8 +242,11 @@ const menuData: MenuTypes[] = [
         vege: true,
       },
       {
-        name: "Tagliatelle",
-        header: "z polędwiczką wieprzową",
+        name: {
+          pl: "Tagilatelle",
+          en: "Tagilatelle",
+        },
+        header: { pl: "z polędwiczką wieprzową", en: "with pork tenderloin" },
         price: "45zł",
         description: {
           pl: "Cebula, czosnek, pieczarki, masło",
@@ -190,12 +259,21 @@ const menuData: MenuTypes[] = [
   {
     id: "7",
     type: "food",
-    category: "Burgery",
-    burgerDescription:
-      "W zestawie z frytkami belgijskimi, krążkami cebulowymi, mixem sałat oraz sosem czosnkowym",
+    category: {
+      pl: "Burgery",
+      en: "Burgers",
+    },
+    burgerDescription: {
+      pl: "W zestawie z frytkami belgijskimi, krążkami cebulowymi, mixem sałat oraz sosem czosnkowym",
+      en: "It comes with Belgian fries, onion rings, salad mix and garlic sauce",
+    },
+
     items: [
       {
-        name: "Klasyczny",
+        name: {
+          pl: "Klasyczny",
+          en: "Classic",
+        },
         price: "49zł",
         description: {
           pl: "Bułka pszenna, wołowina, cebula, pomidor, ser cheddar, selekcja sałat, sos autorski",
@@ -204,7 +282,7 @@ const menuData: MenuTypes[] = [
         vege: false,
       },
       {
-        name: "Na ostro",
+        name: { pl: "Na ostro", en: "Spicy" },
         price: "51zł",
         description: {
           pl: "Bułka pszenna, wołowina, cebula, pomidor, ser cheddar, selekcja sałat, jalapeno, sos ostry",
@@ -213,7 +291,7 @@ const menuData: MenuTypes[] = [
         vege: false,
       },
       {
-        name: "Wege ",
+        name: { pl: "Wege", en: "Veggie" },
         price: "49zł",
         description: {
           pl: "Bułka pszenna, burger warzywny, cebula,pomidor, selekcja sałat",
@@ -222,8 +300,8 @@ const menuData: MenuTypes[] = [
         vege: true,
       },
       {
-        name: "Twins burger",
-        header: "",
+        name: { pl: "Twins burger", en: "Twins burger" },
+
         price: "65zł",
         description: {
           pl: "Bułka pszenna, podwójna wołowina, cebula, pomidor, ser cheddar, ser camembert, selekcja sałat, sos autorski",
@@ -236,11 +314,14 @@ const menuData: MenuTypes[] = [
   {
     id: "8",
     type: "pizza",
-    category: "Pizza, 32cm",
+    category: {
+      pl: "Pizza,32cm",
+      en: "Pizza,32cm",
+    },
 
     items: [
       {
-        name: "Napoli",
+        name: { pl: "Napoli", en: "Napoli" },
         price: "29zł",
         description: {
           pl: "Sos pomidorowy, mozarella, oregano",
@@ -249,7 +330,7 @@ const menuData: MenuTypes[] = [
         vege: true,
       },
       {
-        name: "Verona",
+        name: { pl: "Verona", en: "Verona" },
         price: "35zł",
         description: {
           pl: "Sos pomidorowy, mozarella, szynka, pieczarki, oregano",
@@ -258,7 +339,7 @@ const menuData: MenuTypes[] = [
         vege: false,
       },
       {
-        name: "Milano",
+        name: { pl: "Milano", en: "Milano" },
         price: "39zł",
         description: {
           pl: "Sos pomidorowy, mozarella, kurczak, szpinak, parmezan",
@@ -267,7 +348,7 @@ const menuData: MenuTypes[] = [
         vege: false,
       },
       {
-        name: "Roma",
+        name: { pl: "Roma", en: "Roma" },
         price: "43zł",
         description: {
           pl: "Sos pomidorowy, mozarella, szynka, boczek, salami, papryka, oregano",
@@ -276,7 +357,7 @@ const menuData: MenuTypes[] = [
         vege: false,
       },
       {
-        name: "Torino (4 sery)",
+        name: { pl: "Torino (4 sery)", en: "Torino (4 cheeses)" },
         price: "43zł",
         description: {
           pl: "Sos pomidorowy, mozarella",
@@ -285,15 +366,27 @@ const menuData: MenuTypes[] = [
         vege: true,
       },
       {
-        name: "Dodatki",
+        name: { pl: "Dodatki", en: "Add-ons" },
         price1: "4zł",
-        description1: "Sos czosnkowy",
+        description1: {
+          pl: "Sos czosnkowy",
+          en: "Garlic sauce",
+        },
         price2: "4zł",
-        description2: "Ketchup",
+        description2: {
+          pl: "Keczup",
+          en: "Ketchup",
+        },
         price3: "5zł",
-        description3: "Dodatek warzywny",
+        description3: {
+          pl: "Dodatek warzywny",
+          en: "Vegetable supplement",
+        },
         price4: "7zł",
-        description4: "Dodatek mięsny",
+        description4: {
+          pl: "Dodatek mięsny",
+          en: "Meat supplement",
+        },
         vege: false,
       },
     ],
@@ -301,26 +394,41 @@ const menuData: MenuTypes[] = [
   {
     id: "9",
     type: "food",
-    category: "Dla dzieci",
+    category: {
+      pl: "Dla dzieci",
+      en: "For children",
+    },
     items: [
       {
-        name: "Makaron penne",
-        header: "z sosem pomidorowym",
+        name: {
+          pl: "Makaron penne",
+          en: "Penne Pasta",
+        },
+        header: { pl: "z sosem pomidorowym", en: "with tomato sauce" },
         price: "19zł",
         vege: true,
       },
       {
-        name: "Stripsy z frytkami",
+        name: {
+          pl: "Stripsy z frytkami",
+          en: "Strips with Fries",
+        },
         price: "25zł",
         vege: false,
       },
       {
-        name: "Pierogi na słodko z serem ",
+        name: {
+          pl: "Pierogi na słodko z serem",
+          en: "Sweet dumplings with Cheese",
+        },
         price: "23zł",
         vege: false,
       },
       {
-        name: "Pucharek lodowy",
+        name: {
+          pl: "Pucharek lodowy",
+          en: "Ice Cream Bowl",
+        },
 
         price: "29zł",
         description: {
@@ -334,15 +442,24 @@ const menuData: MenuTypes[] = [
   {
     id: "10",
     type: "food",
-    category: "Dodatki",
+    category: {
+      pl: "Dodatki",
+      en: "Additions",
+    },
     items: [
       {
-        name: "Frytki",
+        name: {
+          pl: "Frytki",
+          en: "Fries",
+        },
         price: "9zł",
         vege: false,
       },
       {
-        name: "Krążki cebulowe",
+        name: {
+          pl: "Krążki cebulowe",
+          en: "Onion Rings",
+        },
         price: "25zł",
         vege: false,
       },
@@ -351,11 +468,17 @@ const menuData: MenuTypes[] = [
   {
     id: "11",
     type: "food",
-    category: "Sałatki",
+    category: {
+      pl: "Sałatki",
+      en: "Salads",
+    },
 
     items: [
       {
-        name: "Sałatka cezar",
+        name: {
+          pl: "Sałatka cezar",
+          en: "Caesar Salad",
+        },
         price: "42zł",
         description: {
           pl: "Grillowany kurczak, bekon, selekcja sałat, sos czosnkowy, grzanki, pomidorki cherry,parmezan",
@@ -364,8 +487,11 @@ const menuData: MenuTypes[] = [
         vege: false,
       },
       {
-        name: "Sałatka",
-        header: "z polędwiczką wieprzową",
+        name: {
+          pl: "Sałatka",
+          en: "Salad",
+        },
+        header: { pl: "z polędwiczką wieprzową", en: "with pork tenderloin" },
         price: "42zł",
         description: {
           pl: "Selekcja sałat, czosnek, pomidorki cherry, masło ziołowe",
@@ -374,7 +500,10 @@ const menuData: MenuTypes[] = [
         vege: false,
       },
       {
-        name: "Sałatka z falafelem",
+        name: {
+          pl: "Sałatka z falafelem",
+          en: "Falafel Salad",
+        },
         price: "39zł",
         description: {
           pl: "Selekcja sałat, pomidorki cherry, cebula, sos balsamiczny",
@@ -383,7 +512,10 @@ const menuData: MenuTypes[] = [
         vege: true,
       },
       {
-        name: "Sałatka z kurczakiem ",
+        name: {
+          pl: "Sałatka z kurczakiem ",
+          en: "Chicken Salad",
+        },
         price: "42zł",
         description: {
           pl: "grillowany kurczak, mango, selekcja sałat, sos ogrodowy,pomidorki",
@@ -396,11 +528,17 @@ const menuData: MenuTypes[] = [
   {
     id: "12",
     type: "food",
-    category: "Desery",
+    category: {
+      pl: "Desery",
+      en: "Desserts",
+    },
 
     items: [
       {
-        name: "Panna cotta",
+        name: {
+          pl: "Panna Cotta",
+          en: "Panna Cotta",
+        },
         price: "23zł",
         description: {
           pl: "Mus malinowy, owoce",
@@ -409,7 +547,10 @@ const menuData: MenuTypes[] = [
         vege: false,
       },
       {
-        name: "Szarlotka",
+        name: {
+          pl: "Szarlotka",
+          en: "Apple Cake",
+        },
         price: "23zł",
         description: {
           pl: "Gałka loda, bita śmietana",
@@ -418,7 +559,10 @@ const menuData: MenuTypes[] = [
         vege: false,
       },
       {
-        name: "Brownie",
+        name: {
+          pl: "Brownie",
+          en: "Brownie",
+        },
         price: "23zł",
         description: {
           pl: "Karmel, orzechy, bita śmietana,owoce",
@@ -427,13 +571,19 @@ const menuData: MenuTypes[] = [
         vege: false,
       },
       {
-        name: "Pancake ",
+        name: {
+          pl: "Pancake ",
+          en: "Pancake",
+        },
         price: "23zł",
         description: { pl: "Bita śmietana, owoce", en: "Whipped cream, fruit" },
         vege: false,
       },
       {
-        name: "Lody śmietankowe",
+        name: {
+          pl: "Lody śmietankowe",
+          en: "Creamy Ice Cream",
+        },
         price: "23zł",
         description: {
           pl: "Bita śmietana, mus malinowy",
@@ -442,7 +592,10 @@ const menuData: MenuTypes[] = [
         vege: false,
       },
       {
-        name: "Creme brulée",
+        name: {
+          pl: "Creme brulée",
+          en: "Creme Brulée",
+        },
         price: "23zł",
         description: {
           pl: " Mus malinowy, owoce",
@@ -455,11 +608,17 @@ const menuData: MenuTypes[] = [
   {
     id: "13",
     type: "drink",
-    category: "Napoje",
+    category: {
+      pl: "Napoje",
+      en: "Drinks",
+    },
 
     items: [
       {
-        name: "Napój gazowany 0.2 L",
+        name: {
+          pl: "Napój gazowany 0.2 L",
+          en: "Soda 0.2 L",
+        },
         price: "10zł",
         description: {
           pl: "Pepsi, pepsi max, mirinda, 7up, shweppes",
@@ -468,7 +627,10 @@ const menuData: MenuTypes[] = [
         vege: false,
       },
       {
-        name: "Lemoniada 0.4 L",
+        name: {
+          pl: "Lemoniada 0.4 L",
+          en: "Lemonade 0.4 L",
+        },
         price: "18zł",
         description: {
           pl: "Cytrynowo-miodowa, malinowo-truskawkowa",
@@ -477,7 +639,10 @@ const menuData: MenuTypes[] = [
         vege: false,
       },
       {
-        name: "Lemoniada Kraftowa 1L",
+        name: {
+          pl: "Lemoniada Kraftowa 1L",
+          en: "Craft Lemonade 1L",
+        },
         price: "29zł",
         description: {
           pl: "Cytrynowo-miodowa, malinowo-limonkowa",
@@ -486,7 +651,10 @@ const menuData: MenuTypes[] = [
         vege: false,
       },
       {
-        name: "Woda 0.2 L",
+        name: {
+          pl: "Woda 0.2 L",
+          en: "Water 0.2 L",
+        },
         price: "7zł",
         description: {
           pl: "Gazowana, niegazowana",
@@ -495,7 +663,10 @@ const menuData: MenuTypes[] = [
         vege: false,
       },
       {
-        name: "Woda Karafka 1L",
+        name: {
+          pl: "Woda Karafka 1L",
+          en: "Water Carafe 1L",
+        },
         price: "15zł",
         description: {
           pl: "Gazowana, niegazowana",
@@ -504,19 +675,28 @@ const menuData: MenuTypes[] = [
         vege: false,
       },
       {
-        name: "Sok 0.2 L",
+        name: {
+          pl: "Sok 0.2 L",
+          en: "Juice 0.2 L",
+        },
         price: "10zł",
         description: { pl: "Jabłko, pomarańcza", en: "Apple, orange" },
         vege: false,
       },
       {
-        name: " Lipton Ice Tea 0.2 L",
+        name: {
+          pl: " Lipton Ice Tea 0.2 L",
+          en: "Lipton Ice Tea 0.2 L",
+        },
         price: "10zł",
         description: { pl: "Brzoskwnia", en: "Birchbox" },
         vege: false,
       },
       {
-        name: "Rock Star energy  0.2 L",
+        name: {
+          pl: "Rock Star energy  0.2 L",
+          en: "Rock Star energy  0.2 L",
+        },
         price: "15zł",
         vege: false,
       },
@@ -525,36 +705,57 @@ const menuData: MenuTypes[] = [
   {
     id: "14",
     type: "drink",
-    category: "Herbata",
+    category: {
+      pl: "Herbata",
+      en: "Tea",
+    },
 
     items: [
       {
-        name: "Ceylon gold",
+        name: {
+          pl: "Ceylon Gold",
+          en: "Ceylon Gold",
+        },
         price: "10zł",
         vege: false,
       },
       {
-        name: "Earl grey",
+        name: {
+          pl: "Earl Grey",
+          en: "Earl Grey",
+        },
         price: "10zł",
         vege: false,
       },
       {
-        name: "Zielona sencha",
+        name: {
+          pl: "Zielona sencha",
+          en: "Green Sencha",
+        },
         price: "10zł",
         vege: false,
       },
       {
-        name: "Miętowa",
+        name: {
+          pl: "Miętowa",
+          en: "Mint",
+        },
         price: "10zł",
         vege: false,
       },
       {
-        name: "Biała",
+        name: {
+          pl: "Biała",
+          en: "White",
+        },
         price: "10zł",
         vege: false,
       },
       {
-        name: "Owoce leśne",
+        name: {
+          pl: "Owoce leśne",
+          en: "Forest Fruits",
+        },
         price: "10zł",
         vege: false,
       },
@@ -563,41 +764,65 @@ const menuData: MenuTypes[] = [
   {
     id: "15",
     type: "drink",
-    category: "Kawy",
+    category: {
+      pl: "Kawy",
+      en: "Coffees",
+    },
 
     items: [
       {
-        name: "Espresso",
+        name: {
+          pl: "Espresso",
+          en: "Espresso",
+        },
         price: "8zł",
         vege: false,
       },
       {
-        name: "Espresso dopio",
+        name: {
+          pl: "Espresso doppio",
+          en: "Espresso doppio",
+        },
         price: "10zł",
         vege: false,
       },
       {
-        name: "Flat white",
+        name: {
+          pl: "Flat white",
+          en: "Flat White",
+        },
         price: "10zł",
         vege: false,
       },
       {
-        name: "Czarna",
+        name: {
+          pl: "Czarna",
+          en: "Black",
+        },
         price: "10zł",
         vege: false,
       },
       {
-        name: "Cappucino",
+        name: {
+          pl: "Cappucino",
+          en: "Cappuccino",
+        },
         price: "12zł",
         vege: false,
       },
       {
-        name: "Latte",
+        name: {
+          pl: "Latte",
+          en: "Latte",
+        },
         price: "16zł",
         vege: false,
       },
       {
-        name: "Mrożona",
+        name: {
+          pl: "Mrożona",
+          en: "Frozen",
+        },
         description: {
           pl: "Lody, syrop czekoladowy, bita śmietana",
           en: "Ice cream, chocolate syrup, whipped cream",
@@ -610,30 +835,54 @@ const menuData: MenuTypes[] = [
   {
     id: "16",
     type: "alcohol",
-    category: "Koktajle",
+    category: {
+      pl: "Koktajle",
+      en: "Cocktails",
+    },
 
     items: [
       {
-        name: "Honey Mood",
-        header: "(słodko-kwaśny)",
+        name: {
+          pl: "Honey Mood",
+          en: "Honey Mood",
+        },
+        header: {
+          pl: "(słodko-kwaśny)",
+          en: "(sweet and sour)",
+        },
         price: "29zł",
         vege: false,
       },
       {
-        name: "Tropical",
-        header: "(słodko-tropikalny)",
+        name: {
+          pl: "Tropical",
+          en: "Tropical",
+        },
+        header: { pl: "(słodko-tropikalny)", en: "sweet-tropical" },
         price: "29zł",
         vege: false,
       },
       {
-        name: "Aperol Spiritz",
-        header: "(orzeźwiający)",
+        name: {
+          pl: "Aperol Spiritz",
+          en: "Aperol Spiritz",
+        },
+        header: {
+          pl: "(orzeźwiający)",
+          en: "(refreshing)",
+        },
         price: "29zł",
         vege: false,
       },
       {
-        name: "Limoncello Spiritz",
-        header: "(orzeźwiający)",
+        name: {
+          pl: "Limoncello Spiritz",
+          en: "Limoncello Spiritz",
+        },
+        header: {
+          pl: "(orzeźwiający)",
+          en: "(refreshing)",
+        },
         price: "29zł",
         vege: false,
       },
@@ -642,39 +891,69 @@ const menuData: MenuTypes[] = [
   {
     id: "17",
     type: "beer",
-    category: "Piwo",
+    category: {
+      pl: "Piwo",
+      en: "Beer",
+    },
 
     items: [
       {
-        type: "Piwo Beczkowe",
-        name: "Żywiec 0.5L",
+        type: {
+          pl: "Piwo Beczkowe",
+          en: "Cask Ale",
+        },
+        name: {
+          pl: "Żywiec 0.5L",
+          en: "Żywiec 0.5L",
+        },
         price: "17zł",
         vege: false,
       },
       {
-        type: "Piwo butelkowe",
-        name: "Żywiec 0.5L",
+        type: {
+          pl: "Piwo butelkowe",
+          en: "Bottled Beer",
+        },
+        name: {
+          pl: "Żywiec 0.5L",
+          en: "Żywiec 0.5L",
+        },
         price: "17zł",
         vege: false,
       },
       {
-        type: "Bezalkoholowe 0.5L",
-        name: "Żywiec",
+        type: {
+          pl: "Bezalkoholowe 0.5L",
+          en: "Non-alcoholic 0.5L",
+        },
+        name: {
+          pl: "Żywiec",
+          en: "Żywiec",
+        },
         price: "17zł",
         vege: false,
       },
       {
-        name: "Żywiec białe",
+        name: {
+          pl: "Żywiec białe",
+          en: "Żywiec White",
+        },
         price: "17zł",
         vege: false,
       },
       {
-        name: "Heineken",
+        name: {
+          pl: "Heineken",
+          en: "Heineken",
+        },
         price: "17zł",
         vege: false,
       },
       {
-        name: "Warka Radler",
+        name: {
+          pl: "Warka Radler",
+          en: "Warka Radler",
+        },
         description: {
           pl: "Mango z pomarańczą, cytryna",
           en: "Mango with orange, lemon",
@@ -683,7 +962,10 @@ const menuData: MenuTypes[] = [
         vege: false,
       },
       {
-        name: "Sok malinowy",
+        name: {
+          pl: "Sok malinowy",
+          en: "Raspberry Juice",
+        },
         price: "4zł",
         vege: false,
       },
@@ -692,12 +974,21 @@ const menuData: MenuTypes[] = [
   {
     id: "18",
     type: "wine",
-    category: "Wino",
+    category: {
+      pl: "Wino",
+      en: "Wine",
+    },
 
     items: [
       {
-        type: "Czerwone",
-        name: "Domowe",
+        type: {
+          pl: "Czerwone",
+          en: "Red",
+        },
+        name: {
+          pl: "Domowe",
+          en: "Homemade",
+        },
         description: { pl: "Tempranillo, Spain", en: "Tempranillo, Spain" },
         price: "59zł",
         bottle: "0,5 L",
@@ -706,7 +997,10 @@ const menuData: MenuTypes[] = [
         vege: false,
       },
       {
-        name: "Bordinese",
+        name: {
+          pl: "Bordinese",
+          en: "Bordinese",
+        },
         description: { pl: "Montepulciano, Italy", en: "Montepulciano, Italy" },
 
         price: "79zł",
@@ -716,8 +1010,14 @@ const menuData: MenuTypes[] = [
         vege: false,
       },
       {
-        type: "Białe",
-        name: "Domowe",
+        type: {
+          pl: "Białe",
+          en: "White",
+        },
+        name: {
+          pl: "Domowe",
+          en: "Homemade",
+        },
         description: {
           pl: "Bianco Mocabeo, Spain",
           en: "Bianco Mocabeo, Spain",
@@ -730,8 +1030,14 @@ const menuData: MenuTypes[] = [
         vege: false,
       },
       {
-        type: "Wytrawne",
-        name: "Pinot",
+        type: {
+          pl: "Wytrawne",
+          en: "Dry",
+        },
+        name: {
+          pl: "Pinot",
+          en: "Pinot",
+        },
         description: {
           pl: "Grigio, Italy",
           en: "Grigio, Italy",
@@ -744,8 +1050,14 @@ const menuData: MenuTypes[] = [
         vege: false,
       },
       {
-        type: "Musujące",
-        name: "Prosecco",
+        type: {
+          pl: "Musujące",
+          en: "Sparkling",
+        },
+        name: {
+          pl: "Prosecco",
+          en: "Prosecco",
+        },
         description: {
           pl: "extra dry",
           en: "extra dry",
@@ -758,7 +1070,10 @@ const menuData: MenuTypes[] = [
         vege: false,
       },
       {
-        name: "Adelina",
+        name: {
+          pl: "Adelina",
+          en: "Adelina",
+        },
         description: {
           pl: "traviso,Italy",
           en: "traviso,Italy",
@@ -775,12 +1090,21 @@ const menuData: MenuTypes[] = [
   {
     id: "19",
     type: "alcohol",
-    category: "Alkohole",
+    category: {
+      pl: "Alkohole",
+      en: "Alcohols",
+    },
 
     items: [
       {
-        type: "Wódka",
-        name: "Finlandia",
+        type: {
+          pl: "Wódka",
+          en: "Vodka",
+        },
+        name: {
+          pl: "Finlandia",
+          en: "Finlandia",
+        },
         price: "130zł",
         bottle: "0,5 L",
         glass: "10zł",
@@ -788,7 +1112,10 @@ const menuData: MenuTypes[] = [
         vege: false,
       },
       {
-        name: "Biały bocian",
+        name: {
+          pl: "Biały bocian",
+          en: "Biały bocian",
+        },
         price: "120zł",
         bottle: "0,5 L",
         glass: "9zł",
@@ -796,8 +1123,14 @@ const menuData: MenuTypes[] = [
         vege: false,
       },
       {
-        type: "Whisky",
-        name: "Jack Daniels",
+        type: {
+          pl: "Whisky",
+          en: "Whisky",
+        },
+        name: {
+          pl: "Jack Daniels",
+          en: "Jack Daniels",
+        },
         description: { pl: "Zwykły,Apple,Honey", en: "Plain,Apple,Honey" },
         price: "250zł",
         bottle: "0,7 L",
@@ -806,7 +1139,10 @@ const menuData: MenuTypes[] = [
         vege: false,
       },
       {
-        name: "Jameson",
+        name: {
+          pl: "Jameson",
+          en: "Jameson",
+        },
         price: "250zł",
         bottle: "0,7 L",
         glass: "15zł",
@@ -814,8 +1150,14 @@ const menuData: MenuTypes[] = [
         vege: false,
       },
       {
-        type: "Rum",
-        name: "Bacardi",
+        type: {
+          pl: "Rum",
+          en: "Rum",
+        },
+        name: {
+          pl: "Bacardi",
+          en: "Bacardi",
+        },
         price: "150zł",
         bottle: "0,5 L",
         glass: "12zł",
@@ -823,8 +1165,14 @@ const menuData: MenuTypes[] = [
         vege: false,
       },
       {
-        type: "Likier",
-        name: "Jagermeister",
+        type: {
+          pl: "Likier",
+          en: "Liqueur",
+        },
+        name: {
+          pl: "Jagermeister",
+          en: "Jagermeister",
+        },
         price: "150zł",
         bottle: "0,5 L",
         glass: "12zł",
@@ -832,7 +1180,10 @@ const menuData: MenuTypes[] = [
         vege: false,
       },
       {
-        name: "Wiśniówka",
+        name: {
+          pl: "Wiśniówka",
+          en: "Wiśniówka",
+        },
         price: "130zł",
         bottle: "0,5 L",
         glass: "10zł",
@@ -840,8 +1191,14 @@ const menuData: MenuTypes[] = [
         vege: false,
       },
       {
-        type: "Gin",
-        name: "Beefeater",
+        type: {
+          pl: "Gin",
+          en: "Gin",
+        },
+        name: {
+          pl: "Beefeater",
+          en: "Beefeater",
+        },
         price: "199zł",
         bottle: "0,7 L",
         glass: "15zł",
@@ -853,13 +1210,22 @@ const menuData: MenuTypes[] = [
   {
     id: "20",
     type: "alcohol",
-    category: "Alkohol Premium",
+    category: {
+      pl: "Alkohol Premium",
+      en: "Alcohol Premium",
+    },
 
     items: [
       {
-        type: "Wina musujące",
+        type: {
+          pl: "Wina musujące",
+          en: "Sparkling Wines",
+        },
 
-        name: "Moet&Chandon",
+        name: {
+          pl: "Moet&Chandon",
+          en: "Moet&Chandon",
+        },
         description: {
           pl: "Brut Imperial, France",
           en: "Brut Imperial, France",
@@ -869,7 +1235,10 @@ const menuData: MenuTypes[] = [
         vege: false,
       },
       {
-        name: "Moet&Chandon",
+        name: {
+          pl: "Moet&Chandon",
+          en: "Moet&Chandon",
+        },
         description: {
           pl: "Rose Imperial, France",
           en: "Rose Imperial, France",
@@ -880,7 +1249,10 @@ const menuData: MenuTypes[] = [
         vege: false,
       },
       {
-        name: "Dom Perignon",
+        name: {
+          pl: "Dom Perignon",
+          en: "Dom Perignon",
+        },
         description: {
           pl: "Chempion 2000, France",
           en: "Chempion 2000, France",

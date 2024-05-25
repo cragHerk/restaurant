@@ -13,6 +13,8 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "nav-image": "url('/nav.png')",
+        "switcher-pl": "url('/pl.svg')",
+        "switcher-en": "url('/en.svg')",
       },
       colors: {
         background: "#a38954",

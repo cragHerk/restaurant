@@ -81,14 +81,12 @@ const Hero = () => {
         {images.map((image) => (
           <div
             key={image.id}
-            className="keen-slider__slide h-[calc(100vh-140px)]  lg:h-[calc(100vh-240px)]  "
+            className="keen-slider__slide relative  h-[calc(100vh-140px)]  lg:h-[calc(100vh-240px)]  "
           >
             <Image
               alt={image.title}
               src={isMobile ? image.mb : image.lg}
-              width={100}
-              height={100}
-              layout="responsive"
+              layout="fill"
               objectFit="cover"
             />
           </div>

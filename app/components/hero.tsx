@@ -8,14 +8,25 @@ import Image from "next/image";
 const images = [
   {
     id: 1,
-    mb: "/hero/mb-1.jpg",
-    lg: "/hero/lg-1.jpg",
+    mb: "/hero/black-burger.jpg",
+    lg: "/hero/black-burger.jpg",
     title: "1.",
   },
-  { id: 2, mb: "/hero/mb-2.jpg", lg: "/hero/lg-2.jpg", title: "2" },
-  { id: 3, mb: "/hero/mb-3.jpg", lg: "/hero/lg-3.jpg", title: "3" },
-  { id: 4, mb: "/hero/mb-4.jpg", lg: "/hero/lg-4.jpg", title: "4" },
-  { id: 5, mb: "/hero/mb-5.jpg", lg: "/hero/lg-5.jpg", title: "5" },
+  {
+    id: 2,
+    mb: "/hero/lemonade-mb.jpg",
+    lg: "/hero/lemonade-lg.jpg",
+    title: "2",
+  },
+  { id: 3, mb: "/hero/pasta-mb.jpg", lg: "/hero/pasta-mb.jpg", title: "3" },
+  {
+    id: 4,
+    mb: "/hero/purple-dish-mb.jpg",
+    lg: "/hero/purple-dish-lg.jpg",
+    title: "4",
+  },
+  { id: 5, mb: "/hero/tomato-mb.jpg", lg: "/hero/tomato-lg.jpg", title: "5" },
+  { id: 6, mb: "/hero/pizza-mb.jpg", lg: "/hero/pizza-lg.jpg", title: "6" },
 ];
 
 const Hero = () => {

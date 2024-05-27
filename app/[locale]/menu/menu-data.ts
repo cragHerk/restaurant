@@ -1209,10 +1209,10 @@ const menuData: MenuTypes[] = [
   },
   {
     id: "20",
-    type: "alcohol",
+    type: "wine",
     category: {
-      pl: "Alkohol Premium",
-      en: "Alcohol Premium",
+      pl: "Wina Premium",
+      en: "Premium Wine",
     },
 
     items: [

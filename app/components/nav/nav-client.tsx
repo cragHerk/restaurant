@@ -60,7 +60,7 @@ const NavClient = ({
         </Link>
       </div>
 
-      <ul className="hidden lg:flex bg-g opacity-75 space-x-4 mr-24 pt-0.5 pb-1 px-2 items-center">
+      <ul className="hidden lg:flex bg-g opacity-75 space-x-4 mr-8 xl:mr-24 pt-0.5 pb-1 px-2 items-center">
         {localeLinks.map((link) => (
           <li
             key={link.href}

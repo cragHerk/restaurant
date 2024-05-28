@@ -14,16 +14,16 @@ const ContactButton = ({ contact }: any) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="">
+    <>
       <button
         type="button"
         onClick={() => setIsOpen(true)}
-        className=" text-black  px-6 rounded-lg   font-bold"
+        className=" text-black  px-6 rounded-lg font-bold transition hover:scale-110"
       >
         {contact}
       </button>
       <Popup isOpen={isOpen} setIsOpen={setIsOpen} />
-    </div>
+    </>
   );
 };
 interface SpringModalProps {

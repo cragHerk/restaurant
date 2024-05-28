@@ -38,7 +38,7 @@ const SectionClientBot = ({
         alt="section"
         quality={100}
       />
-      <div className="absolute top-[60px] sm:top-[110px] flex flex-col justify-center items-center">
+      <div className="absolute top-[10vw] sm:top-[110px] flex flex-col justify-center items-center">
         <motion.h1
           ref={ref1}
           initial={{ opacity: 0, y: 20 }}
@@ -53,7 +53,7 @@ const SectionClientBot = ({
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: inView2 ? 1 : 0, y: 0 }}
           transition={{ duration: 0.5, delay: 0.25 }}
-          className="text-sm  text-white z-20 font-bold"
+          className="text-sm  text-grey2 font-bold"
         >
           {translations.title2}
         </motion.span>

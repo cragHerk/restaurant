@@ -23,6 +23,7 @@ const config: Config = {
         black: "#201e20",
         grey: "#939F99",
         text: "#232323",
+        grey2: "#373A40",
         white: "#F9FAFB",
         g: "#a38954",
         gt: "#ac9465",

@@ -1,12 +1,12 @@
 import { Metadata } from "next";
-import Contact from "./contact";
+import Party from "./party";
 export const metadata: Metadata = {
   title: "IMPREZY OKOLICZNOŚCIOWE",
   description: "IMPREZY OKOLICZNOŚCIOWE",
 };
 
 const page = () => {
-  return <Contact />;
+  return <Party />;
 };
 
 export default page;

@@ -23,9 +23,9 @@ const SectionClient = ({
   return (
     <section
       id="section"
-      className="flex justify-center items-center flex-col bg-black text-g"
+      className="flex justify-center items-center flex-col bg-black text-g "
     >
-      <div className="flex flex-col justify-center items-center bg-white bg-opacity-10 p-4 md:p-8 m-8 xl:mx-[10vw]">
+      <div className="flex flex-col justify-center items-center bg-white bg-opacity-10 p-4 md:p-8 m-8 xl:mx-[10vw] rounded">
         {" "}
         <motion.h1
           ref={ref1}

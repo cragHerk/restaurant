@@ -35,7 +35,10 @@
     "title2": "The list of allergens is available from the staff"
   },
   "Party": {
-    "description": "Organize a special occasion party at Twins Restaurant! We will do our best to make your family celebration or corporate meeting special. Spacious, modern and air-conditioned restaurant room, professional and flexible approach and delicious food guaranteed.  You are cordially invited!"
+    "description": "Organize a special occasion party at Twins Restaurant! We will do our best to make your family celebration or corporate meeting special. ",
+    "description2": " Spacious, modern and air-conditioned restaurant room, professional and flexible approach and delicious food guaranteed.  You are cordially invited!",
+    "title1": "EVENTS",
+    "title2": ""
   },
   "Meta": {
     "location": "LOCATION",

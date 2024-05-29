@@ -1,4 +1,3 @@
-import { Metadata, GetStaticProps } from "next";
 import Location from "./location";
 import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";

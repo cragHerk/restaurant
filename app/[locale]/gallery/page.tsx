@@ -1,9 +1,13 @@
-import { Metadata } from "next";
 import Gallery from "./gallery";
-export const metadata: Metadata = {
-  title: "GALERIA",
-  description: "GALERIA",
-};
+import { getTranslations } from "next-intl/server";
+
+export async function generateMetadata({ params: { locale } }: any) {
+  const t = await getTranslations({ locale, namespace: "Meta" });
+
+  return {
+    title: t("gallery"),
+  };
+}
 
 const page = () => {
   return <Gallery />;

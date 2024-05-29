@@ -17,7 +17,7 @@ export default function Party() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.5 }}
-            className="w-[100vw] text-xl lg:text-5xl font-semibold absolute left-0  top-[190px] lg:top-[250px] text-center"
+            className="w-[100vw] text-g text-2xl md:text-4xl large:text-6xl font-serif font-bold absolute left-0  top-[190px] lg:top-[250px] text-center"
           >
             IMPREZY <br /> OKOLICZNOŚCIOWE
           </motion.span>

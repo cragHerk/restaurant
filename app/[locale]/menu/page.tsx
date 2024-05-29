@@ -1,10 +1,15 @@
 import { Metadata } from "next";
 import Menu from "./menu";
 import { useTranslations } from "next-intl";
-export const metadata: Metadata = {
-  title: "MENU",
-  description: "Menu of Twins restaurant",
-};
+import { getTranslations } from "next-intl/server";
+
+export async function generateMetadata({ params: { locale } }: any) {
+  const t = await getTranslations({ locale, namespace: "Meta" });
+
+  return {
+    title: t("menu"),
+  };
+}
 
 const page = () => {
   const t = useTranslations("MenuHeader");

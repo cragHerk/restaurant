@@ -15,7 +15,7 @@ export default function Gallery() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.5 }}
-            className="w-[100vw] text-xl lg:text-5xl font-semibold absolute left-0  top-[205px] lg:top-[300px] text-center"
+            className="w-[100vw] text-2xl md:text-4xl large:text-6xl font-serif font-bold absolute left-0  top-[205px] lg:top-[300px] text-center"
           >
             GALERIA
           </motion.span>

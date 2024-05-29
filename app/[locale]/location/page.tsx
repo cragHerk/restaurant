@@ -1,10 +1,15 @@
-import { Metadata } from "next";
+import { Metadata, GetStaticProps } from "next";
 import Location from "./location";
 import { useTranslations } from "next-intl";
-export const metadata: Metadata = {
-  title: "LOKALIZACJA",
-  description: "LOKALIZACJA",
-};
+import { getTranslations } from "next-intl/server";
+
+export async function generateMetadata({ params: { locale } }: any) {
+  const t = await getTranslations({ locale, namespace: "Meta" });
+
+  return {
+    title: t("location"),
+  };
+}
 
 const page = () => {
   const t = useTranslations("Location");

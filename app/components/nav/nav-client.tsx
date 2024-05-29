@@ -35,7 +35,7 @@ const NavClient = ({
     setNav(!nav);
   };
   return (
-    <nav className="z-20 fixed w-screen flex items-center justify-between h-[140px]  bg-nav-image bg-cover  ">
+    <nav className="z-20 fixed w-screen flex items-center justify-between h-[140px]   bg-cover  ">
       <div className="flex items-center">
         <Link href="/">
           <div className="flex">
@@ -58,6 +58,15 @@ const NavClient = ({
             </div>
           </div>
         </Link>
+        <Image
+          src="/nav.png"
+          // width={1000}
+          // height={240}
+          fill={true}
+          alt="bg-nav"
+          objectFit="cover"
+          className="z-[-5]"
+        />
       </div>
 
       <ul className="hidden lg:flex bg-g opacity-75 space-x-4 mr-8 xl:mr-24 pt-0.5 pb-1 px-2 items-center">

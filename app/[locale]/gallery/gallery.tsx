@@ -1,11 +1,12 @@
 "use client";
 import { motion } from "framer-motion";
-import Image from "next/image";
-export default function Gallery() {
+import ImagesGallery from "./Gallery/ImagesGallery";
+import { images } from "./Gallery/images";
+export default function Gallery({ translations }: any) {
   return (
-    <section className=" bg-black text-g flex flex-col justify-center items-center w-full truncate">
+    <section className=" bg-black text-g flex flex-col justify-center items-center w-full ">
       <motion.div
-        className=" pt-[140px] w-[100vw] h-[300px]  lg:h-[500px] overflow-hidden static justify-center items-center flex "
+        className=" pt-[140px]  h-[300px]  lg:h-[500px] overflow-hidden static justify-center items-center flex "
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
@@ -15,21 +16,13 @@ export default function Gallery() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.5 }}
-            className="w-[100vw] text-2xl md:text-4xl large:text-6xl font-serif font-bold absolute left-0  top-[205px] lg:top-[300px] text-center"
+            className="w-full text-2xl md:text-4xl large:text-6xl font-serif font-bold absolute left-0  top-[205px] lg:top-[300px] text-center"
           >
-            GALERIA
+            {translations.gallery}
           </motion.span>
-          <Image
-            src="/party/party.jpg"
-            width={100}
-            height={300}
-            alt="menu"
-            layout="responsive"
-            objectFit="cover"
-            className="h-[200px]"
-          />
         </div>
       </motion.div>
+      <ImagesGallery images={images} />
     </section>
   );
 }

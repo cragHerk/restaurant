@@ -1,4 +1,3 @@
-import { Metadata } from "next";
 import Menu from "./menu";
 import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";

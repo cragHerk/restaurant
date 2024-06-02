@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { MdOutlineMyLocation } from "react-icons/md";
 const Location = ({
   translations,
 }: {
@@ -42,10 +43,10 @@ const Location = ({
               className="flex justify-center items-center"
               href="https://www.google.com/maps/place/Twins+Restaurant/@49.9929569,19.4315575,17z/data=!3m1!4b1!4m6!3m5!1s0x47168dc4442d5e1f:0x1be216c68caf475d!8m2!3d49.9929569!4d19.4315575!16s%2Fg%2F11s_kdbnl4?entry=ttu"
             >
+              {" "}
+              <MdOutlineMyLocation />
               <span>{"["}</span>
-              <span className="text-white opacity-70 text-xs">
-                {translations.map}
-              </span>
+              <span className="text-white opacity-70 ">{translations.map}</span>
               <span>{"]"}</span>
             </a>
             <div className="flex flex-col justify-center items-center text-left w-[200px] lg:w-[340px]">

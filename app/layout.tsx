@@ -6,6 +6,13 @@ export const metadata: Metadata = {
   },
   description:
     "Restauracja w Zatorze, smaczne jedzenie, pizza, burgery, blisko energylandii. Restaurant in Zator, tasty food, pizza, burgers, close to energylandia. ",
+  openGraph: {
+    title: "Twins Restaurant",
+    description: "Black burger, gold burger, ",
+    url: "www.twins-restaurant.pl",
+    siteName: "TWINS Restaurant",
+    images: [{ url: "/hero/black-burger.jpg", width: 1260, height: 800 }],
+  },
 };
 export default function RootLayout({
   children,

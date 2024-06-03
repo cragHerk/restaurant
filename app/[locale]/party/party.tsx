@@ -74,7 +74,7 @@ export default function Party({
             />
           </motion.div>
         </div>
-        <div className="flex flex-col justify-center items-center md:flex-row-reverse ">
+        <div className="flex flex-col justify-center items-center md:flex-row-reverse md:mr-[20px] ">
           {" "}
           <div className=" text-balance flex justtify-center items-center text-center ">
             {" "}

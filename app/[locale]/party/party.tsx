@@ -27,7 +27,7 @@ export default function Party({
   return (
     <section className="truncate bg-white">
       <motion.div
-        className="  pt-[140px]  h-[300px]  lg:h-[500px] overflow-hidden static justify-center items-center flex "
+        className="  pt-[140px]  h-[300px]  lg:h-[400px] overflow-hidden static justify-center items-center flex "
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.25 }}
@@ -42,29 +42,20 @@ export default function Party({
             <span>{translations.title1}</span> <br />{" "}
             <span>{translations.title2}</span>
           </motion.span>
-          {/* <Image
-            src="/party/party.jpg"
-            width={isMobile ? 300 : 400}
-            height={isTablet ? 300 : 400}
-            alt="menu"
-            layout="responsive"
-            objectFit="cover"
-            className="h-[200px]"
-          /> */}
         </div>
       </motion.div>
       <div className="flex flex-col justify-center items-center ">
         <div className="flex flex-col md:flex-row justify-center items-center ">
-          <div className=" text-balance flex justtify-center items-center text-center md:mr-[50px] ">
+          <div className=" text-balance flex justtify-center items-center text-center  ">
             {" "}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.25 }}
-              className="rounded bg-grey bg-opacity-50 m-2 p-2 w-[400px] md:w-[300px]"
+              className="rounded bg-grey bg-opacity-50 m-2 p-2 w-[300px]  md:h-[400px]"
             >
               {" "}
-              <span className="font-serif ">{translations.description}</span>
+              <span className="font-serif  ">{translations.description}</span>
             </motion.div>
           </div>
           <motion.div
@@ -76,7 +67,7 @@ export default function Party({
             {" "}
             <Image
               src="/party/1.jpg"
-              width={isMobile ? 400 : 300}
+              width={300}
               height={700}
               alt="party"
               className="m-2 rounded"
@@ -85,13 +76,13 @@ export default function Party({
         </div>
         <div className="flex flex-col justify-center items-center md:flex-row-reverse ">
           {" "}
-          <div className=" text-balance flex justtify-center items-center text-center md:ml-[50px]">
+          <div className=" text-balance flex justtify-center items-center text-center ">
             {" "}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.25 }}
-              className="rounded bg-grey bg-opacity-50 m-2 p-2 w-[400px] md:w-[300px]"
+              className="rounded bg-grey bg-opacity-50 m-2 p-2 w-[300px]  md:h-[400px]"
             >
               {" "}
               <span className="font-serif ">{translations.description2}</span>
@@ -105,7 +96,7 @@ export default function Party({
           >
             <Image
               src="/party/2.jpg"
-              width={isMobile ? 400 : 300}
+              width={300}
               height={700}
               alt="party"
               className="m-2 rounded"

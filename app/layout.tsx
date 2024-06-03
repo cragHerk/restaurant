@@ -4,6 +4,14 @@ export const metadata: Metadata = {
     default: "TWINS restaurant",
     template: "%s | TWINS restaurant",
   },
+  metadataBase: new URL("https://twins-restaurant.pl"),
+  alternates: {
+    canonical: "/",
+    languages: {
+      "en-US": "/en",
+      "pl-PL": "/PL",
+    },
+  },
   description:
     "Restauracja w Zatorze, smaczne jedzenie, pizza, burgery, blisko energylandii. Restaurant in Zator, tasty food, pizza, burgers, close to energylandia. ",
   openGraph: {

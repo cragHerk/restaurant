@@ -69,7 +69,7 @@ export default function Party({
               src="/party/1.jpg"
               width={300}
               height={700}
-              alt="party"
+              alt="event"
               className="m-2 rounded"
             />
           </motion.div>
@@ -98,7 +98,7 @@ export default function Party({
               src="/party/2.jpg"
               width={300}
               height={700}
-              alt="party"
+              alt="event"
               className="m-2 rounded"
             />
           </motion.div>

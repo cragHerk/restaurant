@@ -60,10 +60,8 @@ const NavClient = ({
         </Link>
         <Image
           src="/nav.png"
-          // width={1000}
-          // height={240}
           fill={true}
-          alt="bg-nav"
+          alt="Pizza"
           objectFit="cover"
           className="z-[-5]"
         />

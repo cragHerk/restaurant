@@ -3,7 +3,7 @@ import GalleryItem from "./GalleryItem";
 
 const ImagesGallery = ({ images }) => {
   return (
-    <div className=" flex md:flex-row flex-wrap justify-center items-center md:w-2/3 ">
+    <div className=" flex md:flex-row flex-wrap justify-center items-center md:w-3/4 ">
       {images.map((image, index) => (
         <GalleryItem
           key={index}

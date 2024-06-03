@@ -23,7 +23,7 @@ const GalleryItem = ({ image, index, images }) => {
       <Image
         src={image.thumbnail}
         alt={image.alt}
-        className=""
+        className="rounded"
         loading="lazy"
         objectFit="cover"
         onClick={handleOpenModal}

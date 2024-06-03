@@ -97,7 +97,7 @@ const Hero = () => {
             <Image
               alt={image.title}
               src={isMobile ? image.mb : image.lg}
-              layout="fill"
+              fill
               objectFit="cover"
             />
           </div>

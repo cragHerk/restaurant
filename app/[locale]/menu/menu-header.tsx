@@ -9,7 +9,7 @@ const Header = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="mt-8 w-[100vw] h-[300px]  lg:h-[500px] overflow-hidden static justify-center items-center flex ">
+      <div className="mt-8 lg:mt-2 w-[100vw] h-[300px]  lg:h-[500px] overflow-hidden static justify-center items-center flex ">
         <Image
           src="/menu/menu.jpg"
           width={400}

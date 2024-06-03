@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Nav from "../components/nav/nav";
@@ -6,24 +5,16 @@ import Footer from "../components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: {
-    default: "TWINS restaurant",
-    template: "%s | TWINS restaurant",
-  },
-  description:
-    "Restauracja w Zatorze, smaczne jedzenie, pizza, burgery, blisko energylandii. Restaurant in Zator, tasty food, pizza, burgers, close to energylandia. ",
-};
-interface RootLayoutProps {
+interface LayoutProps {
   children: React.ReactNode;
   params: {
     locale: string;
   };
 }
-export default function RootLayout({
+export default function Layout({
   children,
   params: { locale },
-}: Readonly<RootLayoutProps>) {
+}: Readonly<LayoutProps>) {
   return (
     <html lang={locale}>
       <body className={inter.className}>

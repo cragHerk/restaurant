@@ -9,15 +9,19 @@ const Header = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="w-[100vw] h-[300px]  lg:h-[500px] overflow-hidden static justify-center items-center flex ">
+      <div className="mt-8 w-[100vw] h-[300px]  lg:h-[500px] overflow-hidden static justify-center items-center flex ">
         <Image
-          src="/menu/menu.png"
-          width={100}
-          height={100}
+          src="/menu/menu.jpg"
+          width={400}
+          height={400}
           alt="menu"
-          layout="responsive"
           objectFit="cover"
+          className=" w-full h-[250px] lg:h-[400px]"
+          quality={100}
         />
+        <span className="absolute font-serif text-2xl md:text-3xl lg:text-7xl">
+          MENU
+        </span>
       </div>
     </motion.div>
   );

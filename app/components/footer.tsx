@@ -23,7 +23,7 @@ const Footer = () => {
           <LiaInstagram size={30} color="#a38954" />
         </a>
       </div>
-      <a className="mr-5" href="http://www.freepik.com">
+      <a className="mr-5" href="https://www.freepik.com">
         Designed by Layerace / Freepik
       </a>
     </footer>

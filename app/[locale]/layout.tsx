@@ -11,7 +11,8 @@ export const metadata: Metadata = {
     default: "TWINS restaurant",
     template: "%s | TWINS restaurant",
   },
-  description: "Restauracja, Zator, Poland, Energylandia ",
+  description:
+    "Restauracja w Zatorze, smaczne jedzenie, pizza, burgery, blisko energylandii. Restaurant in Zator, tasty food, pizza, burgers, close to energylandia. ",
 };
 interface RootLayoutProps {
   children: React.ReactNode;

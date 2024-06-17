@@ -68,7 +68,10 @@ const Popup: React.FC<SpringModalProps> = ({ isOpen, setIsOpen }) => {
                 </li>
                 <li className="mb-2 flex">
                   <AiFillMail size={30} />
-                  <Link href="mailto:library@example.com" legacyBehavior>
+                  <Link
+                    href="mailto:twins.restauracja@gmail.com"
+                    legacyBehavior
+                  >
                     <a className="ml-2">twins.restauracja@gmail.com</a>
                   </Link>
                 </li>

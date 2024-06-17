@@ -98,7 +98,7 @@ const NavClient = ({
         {localeLinks.map((link) => (
           <li
             key={link.href}
-            className="cursor-pointer  w-18 p-2 bg-gt  flex font-bold"
+            className="cursor-pointer  w-18 p-2 bg-gt bg-opacity-70  flex font-bold"
           >
             <Link href={link.href} legacyBehavior>
               <span className="hover:underline ">{link.label}</span>

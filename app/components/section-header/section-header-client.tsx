@@ -23,7 +23,7 @@ const SectionHeaderClient = ({
       id="section-header"
       className="bg-black h-[220px]  lg:h-[100px] flex-wrap flex justify-center pt-[10px] lg:pt-0 lg:items-center "
     >
-      <div className="flex flex-wrap items-center justify-around h-14 w-full">
+      <div className="flex flex-wrap items-center justify-around h-14 w-full opacity-60">
         <motion.div
           ref={ref1}
           initial={{ opacity: 0, y: 20 }}

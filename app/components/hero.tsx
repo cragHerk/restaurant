@@ -95,6 +95,7 @@ const Hero = () => {
             className="keen-slider__slide relative  h-[calc(100vh-140px)]  lg:h-[calc(100vh-240px)]  "
           >
             <Image
+              key={image.id}
               alt={image.title}
               src={isMobile ? image.mb : image.lg}
               fill

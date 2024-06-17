@@ -73,7 +73,7 @@ const NavClient = ({
             key={link.href}
             className="cursor-pointer  w-18 font-extrabold  bg-transparent flex rounded"
           >
-            <Link href={link.href} legacyBehavior>
+            <Link href={link.href} legacyBehavior rel="canonical">
               <span className="hover:underline ">{link.label}</span>
             </Link>
           </li>

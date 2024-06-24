@@ -23,13 +23,13 @@ const SectionHeaderClient = ({
       id="section-header"
       className="bg-black h-[220px]  lg:h-[100px] flex-wrap flex justify-center pt-[10px] lg:pt-0 lg:items-center "
     >
-      <div className="flex flex-wrap items-center justify-around h-14 w-full opacity-60">
+      <div className="flex flex-wrap items-center justify-around h-14 w-full ">
         <motion.div
           ref={ref1}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: inView1 ? 1 : 0, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className=" flex items-center justify-center bg-g opacity-60 h-14 w-full lg:w-[330px] mt-1 sm:mt-0 lg:mt-0 mb-3 lg:mb:0"
+          className=" flex items-center justify-center bg-g  h-14 w-full lg:w-[330px] mt-1 sm:mt-0 lg:mt-0 mb-3 lg:mb:0"
         >
           <span className="font-bold text-2xl flex items-center">
             {translations.title1}
@@ -47,7 +47,7 @@ const SectionHeaderClient = ({
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: inView2 ? 1 : 0, y: 0 }}
           transition={{ duration: 0.5, delay: 0.25 }}
-          className="flex items-center justify-center bg-g opacity-60 h-14 w-full lg:w-[330px]  mb-3 lg:mb:0"
+          className="flex items-center justify-center bg-g  h-14 w-full lg:w-[330px]  mb-3 lg:mb:0"
         >
           <span className="font-bold text-2xl flex items-center ">
             <Image
@@ -65,7 +65,7 @@ const SectionHeaderClient = ({
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: inView3 ? 1 : 0, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="  flex items-center justify-center bg-g opacity-60 h-14 w-full lg:w-[330px] mb-3 lg:mb:0 "
+          className="  flex items-center justify-center bg-g  h-14 w-full lg:w-[330px] mb-3 lg:mb:0 "
         >
           <span className=" font-bold text-2xl flex items-center">
             <FaStar />

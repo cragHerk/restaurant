@@ -16,6 +16,9 @@ const config: Config = {
         "switcher-pl": "url('/pl.svg')",
         "switcher-en": "url('/en.svg')",
       },
+      borderImage: {
+        cg: "conic-gradient(from 45deg at 15% 15%, #81315d 0 10deg, #d82347 10deg 20deg, #fd953b 20deg 30deg, #fe672c 30deg 40deg, #ff292c 40deg 50deg)40;border-image-slice: 1;",
+      },
       colors: {
         background: "#a38954",
         gold: "#FFD60A",

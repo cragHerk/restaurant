@@ -6,7 +6,7 @@ export default function Gallery({ translations }: any) {
   return (
     <section className=" bg-black text-g flex flex-col justify-center items-center w-full ">
       <motion.div
-        className="   overflow-hidden  justify-center items-center flex flex-col mt-[220px]"
+        className="    overflow-hidden  justify-center items-center flex flex-col mt-[220px]"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}

@@ -25,7 +25,7 @@ export default function Party({
   // const [ref4, inView4] = useInView();
   // const [ref5, inView5] = useInView();
   return (
-    <section className="truncate bg-white">
+    <section className="truncate bg-white p-3">
       <motion.div
         className="  pt-[140px]  h-[300px]  lg:h-[400px] overflow-hidden static justify-center items-center flex "
         initial={{ opacity: 0, y: 20 }}
@@ -44,7 +44,7 @@ export default function Party({
           </motion.span>
         </div>
       </motion.div>
-      <div className="flex flex-col justify-center items-center ">
+      <div className="flex flex-col justify-center items-center   border-solid border-[20px] outline outline-offset-[-25px] border-image-cg  ">
         <div className="flex flex-col md:flex-row justify-center items-center ">
           <div className=" text-balance flex justtify-center items-center text-center  ">
             {" "}

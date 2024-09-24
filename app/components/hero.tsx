@@ -27,7 +27,6 @@ const images = [
   },
   { id: 5, mb: "/hero/tomato-mb.jpg", lg: "/hero/tomato-lg.jpg", title: "5" },
   { id: 6, mb: "/hero/pizza-mb.jpg", lg: "/hero/pizza-lg.jpg", title: "6" },
-  // { id: 7, mb: "/hero/steak-mb.jpg", lg: "/hero/steak-lg.jpg", title: "7" },
 ];
 
 const Hero = () => {

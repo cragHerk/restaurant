@@ -27,8 +27,8 @@
     "adress": "The address of the restaurant is",
     "map": "map",
     "open": "Opening Hours:",
-    "from": "Monday-Friday: 4.00-21.00 pm",
-    "to": "Saturday-Sunday: 16.00-21.00"
+    "from": "Monday-Friday: 17.00-22.00 ",
+    "to": "Saturday-Sunday: 17.00-22.00"
   },
   "MenuHeader": {
     "title1": "Vegetarian dish",
@@ -41,10 +41,21 @@
     "title2": ""
   },
   "Gallery": { "gallery": "GALLERY" },
+
   "Meta": {
     "location": "LOCATION",
     "party": "EVENTS",
     "gallery": "GALLERY",
-    "menu": "MENU"
+    "menu": "MENU",
+    "alergens": "ALERGENS"
+  },
+  "Breakfast": {
+    "top": "Breakfast",
+    "top2": "buffet",
+    "top3": "breakfast",
+    "desc": "Breakfast daily 8-11",
+    "desc2": "Breakfast daily 8-11",
+    "desc3": "The buffet includes a selection of breads, scrambled eggs, processed meats, cold cuts, sausages, frankfurters, cheeses, yogurts, dairy products, fresh vegetables and fruits, salads, egg paste, hard-boiled eggs, breakfast cereals, muesli, desserts, a selection of coffees, teas, beverages",
+    "price": "Price :"
   }
 }

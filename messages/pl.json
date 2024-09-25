@@ -27,8 +27,8 @@
     "adress": "Adres restauracji to",
     "map": "mapa",
     "open": "Godziny otwarcia:",
-    "from": "poniedziałek-piątek: 16.00-21.00",
-    "to": "sobota-niedziela: 16.00-21.00"
+    "from": "poniedziałek-piątek: 17.00-22.00",
+    "to": "sobota-niedziela: 17.00-22.00"
   },
   "MenuHeader": {
     "title1": "Danie wegetariańskie",
@@ -41,10 +41,21 @@
     "title2": "OKOLICZNOŚCIOWE"
   },
   "Gallery": { "gallery": "GALERIA" },
+
   "Meta": {
     "location": "LOKALIZACJA",
     "party": "IMPREZY OKOLICZNOŚCIOWE",
     "gallery": "GALERIA",
-    "menu": "MENU"
+    "menu": "MENU",
+    "alergens": "ALERGENY"
+  },
+  "Breakfast": {
+    "top": "Śniadania",
+    "top2": "w formie bufetu",
+    "top3": "breakfast",
+    "desc": "Śniadania codziennie 8-11",
+    "desc2": "Restauracja codziennie 17-22",
+    "desc3": "Bufet zawiera m.in. wybór pieczywa, jajecznica, przetwory mięsne, wędliny, parówki, frankfurterki, sery, jogurty, nabiał, świeże warzywa i owoce, sałatki, pasta jajeczna, jajka na twardo, płatki śniadaniowe, musli, desery, wybór kaw, herbat, napojów ",
+    "price": "Cena :"
   }
 }

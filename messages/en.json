@@ -57,5 +57,9 @@
     "desc2": "Breakfast daily 8-11",
     "desc3": "The buffet includes a selection of breads, scrambled eggs, processed meats, cold cuts, sausages, frankfurters, cheeses, yogurts, dairy products, fresh vegetables and fruits, salads, egg paste, hard-boiled eggs, breakfast cereals, muesli, desserts, a selection of coffees, teas, beverages",
     "price": "Price :"
+  },
+  "Break": {
+    "top": "Zamknięte",
+    "top2": "Restauracja zamknięta, poza sezonem"
   }
 }

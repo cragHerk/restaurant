@@ -26,7 +26,7 @@ const menuData: MenuTypes[] = [
           en: "Camembert cheese",
         },
         header: { pl: "panierowany", en: "breaded" },
-        price: "27zł",
+        price: "29zł",
         description: {
           pl: " mix sałat, żurawina",
           en: "salad mix, cranberries",
@@ -60,7 +60,7 @@ const menuData: MenuTypes[] = [
           pl: "Barszcz czerwony",
           en: "Red borscht",
         },
-        price: "22zł",
+        price: "25zł",
         header: { pl: "z uszkami", en: "with ravioli" },
         vege: false,
       },
@@ -69,7 +69,7 @@ const menuData: MenuTypes[] = [
           pl: "Krem czosnkowy",
           en: "Garlic cream",
         },
-        price: "22zł",
+        price: "25zł",
         vege: true,
       },
       {
@@ -77,9 +77,18 @@ const menuData: MenuTypes[] = [
           pl: "Krem z brokułów ",
           en: "Cream of broccoli ",
         },
-        price: "22zł",
+        price: "25zł",
         header: { pl: "z grzankami", en: "with croutons" },
         vege: true,
+      },
+      {
+        name: {
+          pl: "Zupa tajska ",
+          en: "Thai soup",
+        },
+        price: "32zł",
+
+        vege: false,
       },
     ],
   },
@@ -96,7 +105,7 @@ const menuData: MenuTypes[] = [
           pl: "Pierogi z mięsem ",
           en: "Dumplings with meat",
         },
-        price: "32zł",
+        price: "35zł",
         header: { pl: "okraszone cebulką", en: "onion-topped" },
         vege: false,
       },
@@ -105,7 +114,7 @@ const menuData: MenuTypes[] = [
           pl: "Pierogi ruskie",
           en: "Russian dumplings",
         },
-        price: "32zł",
+        price: "35zł",
         header: { pl: "z cebulką", en: "with onion" },
         vege: true,
       },
@@ -153,7 +162,7 @@ const menuData: MenuTypes[] = [
           en: "Black tagilatelle",
         },
         header: { pl: "z krewetkami", en: "with shrimps" },
-        price: "48zł",
+        price: "55zł",
         description: {
           pl: "Czosnek, masło, białe wino",
           en: "Garlic, butter, white wine",
@@ -176,7 +185,7 @@ const menuData: MenuTypes[] = [
           pl: "Shoarma drobiowa",
           en: "Poultry shoarma",
         },
-        price: "39zł",
+        price: "45zł",
         description: {
           pl: "Frytki, mix sałat,sos",
           en: "French fries, lettuce mix,dressing",
@@ -188,7 +197,7 @@ const menuData: MenuTypes[] = [
           pl: "Grilowany schab z kością",
           en: "Grilled pork loin on the bone",
         },
-        price: "47zł",
+        price: "49zł",
         description: {
           pl: "ziemnaki opiekane, selekcja sałat",
           en: "toasted earthenware, lettuce selection",
@@ -210,7 +219,7 @@ const menuData: MenuTypes[] = [
           pl: "Penne rigatoni",
           en: "Penne rigatoni",
         },
-        price: "39zł",
+        price: "42zł",
         description: {
           pl: "kurczak w sosie śmietanowym, szpinak, czosnek, parmezan",
           en: "chicken in cream sauce, spinach, garlic, parmesan",
@@ -222,7 +231,7 @@ const menuData: MenuTypes[] = [
           pl: "Penne chorizo",
           en: "Penne chorizo",
         },
-        price: "42zł",
+        price: "45zł",
         description: {
           pl: "Hiszpańska kiełbasa chorizo, grillowane warzywa, parmezan",
           en: "Spanish chorizo sausage, grilled vegetables, parmesan cheese",
@@ -234,7 +243,7 @@ const menuData: MenuTypes[] = [
           pl: "Agilo olio",
           en: "Agilo olio",
         },
-        price: "29zł",
+        price: "32zł",
         description: {
           pl: "Rukola, pomidorki koktajlowe, oliwa, czosnek",
           en: "Arugula, cherry tomatoes, oil, garlic",
@@ -247,7 +256,7 @@ const menuData: MenuTypes[] = [
           en: "Tagilatelle",
         },
         header: { pl: "z polędwiczką wieprzową", en: "with pork tenderloin" },
-        price: "45zł",
+        price: "46zł",
         description: {
           pl: "Cebula, czosnek, pieczarki, masło",
           en: "Onions, garlic, mushrooms, butter",
@@ -283,7 +292,7 @@ const menuData: MenuTypes[] = [
       },
       {
         name: { pl: "Na ostro", en: "Spicy" },
-        price: "51zł",
+        price: "52zł",
         description: {
           pl: "Bułka pszenna, wołowina, cebula, pomidor, ser cheddar, selekcja sałat, jalapeno, sos ostry",
           en: "Wheat roll, beef, onion, tomato, cheddar cheese, lettuce selection, jalapeno, hot sauce",
@@ -302,7 +311,7 @@ const menuData: MenuTypes[] = [
       {
         name: { pl: "Twins burger", en: "Twins burger" },
 
-        price: "65zł",
+        price: "69zł",
         description: {
           pl: "Bułka pszenna, podwójna wołowina, cebula, pomidor, ser cheddar, ser camembert, selekcja sałat, sos autorski",
           en: "Wheat roll, double beef, onion, tomato, cheddar cheese, camembert cheese, lettuce selection, author's dressing",
@@ -331,7 +340,7 @@ const menuData: MenuTypes[] = [
       },
       {
         name: { pl: "Verona", en: "Verona" },
-        price: "35zł",
+        price: "36zł",
         description: {
           pl: "Sos pomidorowy, mozarella, szynka, pieczarki, oregano",
           en: "Tomato sauce, mozzarella, ham, mushrooms, oregano",
@@ -430,10 +439,10 @@ const menuData: MenuTypes[] = [
           en: "Ice Cream Bowl",
         },
 
-        price: "29zł",
+        price: "19zł",
         description: {
-          pl: "2 gałki lodów o smaku gumy balonowej, bita śmietana, polewa,posypka",
-          en: "2 scoops of bubble gum flavored ice cream, whipped cream, topping,sprinkles",
+          pl: "2 gałki lodów, bita śmietana, polewa,posypka",
+          en: "2 scoops of ice cream, whipped cream, topping,sprinkles",
         },
         vege: false,
       },
@@ -452,7 +461,7 @@ const menuData: MenuTypes[] = [
           pl: "Frytki",
           en: "Fries",
         },
-        price: "9zł",
+        price: "10zł",
         vege: false,
       },
       {
@@ -460,7 +469,7 @@ const menuData: MenuTypes[] = [
           pl: "Krążki cebulowe",
           en: "Onion Rings",
         },
-        price: "25zł",
+        price: "10zł",
         vege: false,
       },
     ],
@@ -479,7 +488,7 @@ const menuData: MenuTypes[] = [
           pl: "Sałatka cezar",
           en: "Caesar Salad",
         },
-        price: "42zł",
+        price: "45zł",
         description: {
           pl: "Grillowany kurczak, bekon, selekcja sałat, sos czosnkowy, grzanki, pomidorki cherry,parmezan",
           en: "Grilled chicken, bacon, lettuce selection, garlic sauce, croutons, cherry tomatoes,parmesan cheese",
@@ -492,7 +501,7 @@ const menuData: MenuTypes[] = [
           en: "Salad",
         },
         header: { pl: "z polędwiczką wieprzową", en: "with pork tenderloin" },
-        price: "42zł",
+        price: "45zł",
         description: {
           pl: "Selekcja sałat, czosnek, pomidorki cherry, masło ziołowe",
           en: "Lettuce selection, garlic, cherry tomatoes, herb butter",
@@ -504,7 +513,7 @@ const menuData: MenuTypes[] = [
           pl: "Sałatka z falafelem",
           en: "Falafel Salad",
         },
-        price: "39zł",
+        price: "42zł",
         description: {
           pl: "Selekcja sałat, pomidorki cherry, cebula, sos balsamiczny",
           en: "Lettuce selection, cherry tomatoes, onions, balsamic dressing",
@@ -513,10 +522,10 @@ const menuData: MenuTypes[] = [
       },
       {
         name: {
-          pl: "Sałatka z kurczakiem ",
-          en: "Chicken Salad",
+          pl: "Sałatka z kurczakiem i mango ",
+          en: "Chicken Salad with mango",
         },
-        price: "42zł",
+        price: "45zł",
         description: {
           pl: "grillowany kurczak, mango, selekcja sałat, sos ogrodowy,pomidorki",
           en: "grilled chicken, mango, salad selection, garden dressing,tomatoes",
@@ -536,22 +545,10 @@ const menuData: MenuTypes[] = [
     items: [
       {
         name: {
-          pl: "Panna Cotta",
-          en: "Panna Cotta",
-        },
-        price: "23zł",
-        description: {
-          pl: "Mus malinowy, owoce",
-          en: "Raspberry mousse, fruit",
-        },
-        vege: false,
-      },
-      {
-        name: {
           pl: "Szarlotka",
           en: "Apple Cake",
         },
-        price: "23zł",
+        price: "26zł",
         description: {
           pl: "Gałka loda, bita śmietana",
           en: "A scoop of ice cream, whipped cream",
@@ -563,7 +560,7 @@ const menuData: MenuTypes[] = [
           pl: "Brownie",
           en: "Brownie",
         },
-        price: "23zł",
+        price: "26zł",
         description: {
           pl: "Karmel, orzechy, bita śmietana,owoce",
           en: "Caramel, nuts, whipped cream,fruit",
@@ -575,7 +572,7 @@ const menuData: MenuTypes[] = [
           pl: "Pancake ",
           en: "Pancake",
         },
-        price: "23zł",
+        price: "26zł",
         description: { pl: "Bita śmietana, owoce", en: "Whipped cream, fruit" },
         vege: false,
       },
@@ -584,7 +581,7 @@ const menuData: MenuTypes[] = [
           pl: "Lody śmietankowe",
           en: "Creamy Ice Cream",
         },
-        price: "23zł",
+        price: "26zł",
         description: {
           pl: "Bita śmietana, mus malinowy",
           en: "Whipped cream, raspberry mousse",
@@ -593,10 +590,10 @@ const menuData: MenuTypes[] = [
       },
       {
         name: {
-          pl: "Creme brulée",
-          en: "Creme Brulée",
+          pl: "Beza",
+          en: "Meringue cake",
         },
-        price: "23zł",
+        price: "26zł",
         description: {
           pl: " Mus malinowy, owoce",
           en: "Raspberry mousse, fruit",
@@ -628,10 +625,10 @@ const menuData: MenuTypes[] = [
       },
       {
         name: {
-          pl: "Lemoniada 0.4 L",
-          en: "Lemonade 0.4 L",
+          pl: "Lemoniada Kraftowa 0.4 L",
+          en: " Craft Lemonade 0.4 L",
         },
-        price: "18zł",
+        price: "19zł",
         description: {
           pl: "Cytrynowo-miodowa, malinowo-truskawkowa",
           en: "Lemon-honey, raspberry-strawberry”",
@@ -643,7 +640,7 @@ const menuData: MenuTypes[] = [
           pl: "Lemoniada Kraftowa 1L",
           en: "Craft Lemonade 1L",
         },
-        price: "29zł",
+        price: "32zł",
         description: {
           pl: "Cytrynowo-miodowa, malinowo-limonkowa",
           en: "Lemon-honey, raspberry-lime",
@@ -652,10 +649,10 @@ const menuData: MenuTypes[] = [
       },
       {
         name: {
-          pl: "Woda 0.2 L",
-          en: "Water 0.2 L",
+          pl: "Woda Filtrowana 0.2 L",
+          en: "Filtered Water 0.2 L",
         },
-        price: "7zł",
+        price: "8zł",
         description: {
           pl: "Gazowana, niegazowana",
           en: "Carbonated, non-carbonated",
@@ -694,10 +691,10 @@ const menuData: MenuTypes[] = [
       },
       {
         name: {
-          pl: "Rock Star energy  0.2 L",
-          en: "Rock Star energy  0.2 L",
+          pl: "Red Bull - Energy drink  0.25 L",
+          en: "Red Bull - Energy drink  0.25 L",
         },
-        price: "15zł",
+        price: "18zł",
         vege: false,
       },
     ],
@@ -716,7 +713,7 @@ const menuData: MenuTypes[] = [
           pl: "Ceylon Gold",
           en: "Ceylon Gold",
         },
-        price: "10zł",
+        price: "12zł",
         vege: false,
       },
       {
@@ -724,7 +721,7 @@ const menuData: MenuTypes[] = [
           pl: "Earl Grey",
           en: "Earl Grey",
         },
-        price: "10zł",
+        price: "12zł",
         vege: false,
       },
       {
@@ -732,7 +729,7 @@ const menuData: MenuTypes[] = [
           pl: "Zielona sencha",
           en: "Green Sencha",
         },
-        price: "10zł",
+        price: "12zł",
         vege: false,
       },
       {
@@ -740,23 +737,16 @@ const menuData: MenuTypes[] = [
           pl: "Miętowa",
           en: "Mint",
         },
-        price: "10zł",
+        price: "12zł",
         vege: false,
       },
-      {
-        name: {
-          pl: "Biała",
-          en: "White",
-        },
-        price: "10zł",
-        vege: false,
-      },
+
       {
         name: {
           pl: "Owoce leśne",
           en: "Forest Fruits",
         },
-        price: "10zł",
+        price: "12zł",
         vege: false,
       },
     ],
@@ -775,7 +765,7 @@ const menuData: MenuTypes[] = [
           pl: "Espresso",
           en: "Espresso",
         },
-        price: "8zł",
+        price: "10zł",
         vege: false,
       },
       {
@@ -788,10 +778,10 @@ const menuData: MenuTypes[] = [
       },
       {
         name: {
-          pl: "Flat white",
+          pl: "Z mlekiem",
           en: "Flat White",
         },
-        price: "10zł",
+        price: "12zł",
         vege: false,
       },
       {
@@ -799,7 +789,7 @@ const menuData: MenuTypes[] = [
           pl: "Czarna",
           en: "Black",
         },
-        price: "10zł",
+        price: "12zł",
         vege: false,
       },
       {
@@ -807,7 +797,7 @@ const menuData: MenuTypes[] = [
           pl: "Cappucino",
           en: "Cappuccino",
         },
-        price: "12zł",
+        price: "14zł",
         vege: false,
       },
       {
@@ -824,8 +814,8 @@ const menuData: MenuTypes[] = [
           en: "Frozen",
         },
         description: {
-          pl: "Lody, syrop czekoladowy, bita śmietana",
-          en: "Ice cream, chocolate syrup, whipped cream",
+          pl: "Kawa, mleko, lód",
+          en: "Coffe, milk, ice",
         },
         price: "19zł",
         vege: false,
@@ -843,47 +833,86 @@ const menuData: MenuTypes[] = [
     items: [
       {
         name: {
-          pl: "Honey Mood",
-          en: "Honey Mood",
+          pl: "Pink Sarti Spritz (Owocowa Słodycz)",
+          en: "Pink Sarti Spritz (Fruity Sweetness)",
         },
         header: {
-          pl: "(słodko-kwaśny)",
-          en: "(sweet and sour)",
+          pl: "Sarti, prosecco, woda sodowa, limonka",
+          en: "Sarti, prosecco, soda water, lime",
         },
-        price: "29zł",
+        price: "32zł",
         vege: false,
       },
       {
         name: {
-          pl: "Tropical",
-          en: "Tropical",
+          pl: "Tropical (Słodko Tropikalny)",
+          en: "Tropical (Sweet Tropical)",
         },
-        header: { pl: "(słodko-tropikalny)", en: "sweet-tropical" },
-        price: "29zł",
+        header: {
+          pl: "Wódka, marakuja, ananas, cytryna",
+          en: "Vodka, passion fruit, pineapple, lemon",
+        },
+        price: "32zł",
         vege: false,
       },
       {
         name: {
-          pl: "Aperol Spiritz",
-          en: "Aperol Spiritz",
+          pl: "Aperol Spiritz (Orzeźwiający, Słodko-Gorzki)",
+          en: "Aperol Spiritz (refreshing, bittersweet)",
         },
         header: {
-          pl: "(orzeźwiający)",
-          en: "(refreshing)",
+          pl: "Aperol, prosecco, pomarańcza, woda sodowa",
+          en: "Aperol, prosecco, orange, soda water",
         },
-        price: "29zł",
+        price: "32zł",
         vege: false,
       },
       {
         name: {
-          pl: "Limoncello Spiritz",
-          en: "Limoncello Spiritz",
+          pl: "Mojito (Orzeźwiający)",
+          en: "Mojito (refreshing)",
         },
         header: {
-          pl: "(orzeźwiający)",
-          en: "(refreshing)",
+          pl: "Rum, limonka, mięta, cukier trzcinowy, woda sodowa",
+          en: "Rum, lime, mint, cane sugar, soda water",
         },
-        price: "29zł",
+        price: "32zł",
+        vege: false,
+      },
+      {
+        name: {
+          pl: "Campari Spritz (Orzeźwiająco-Gorzki)",
+          en: "Campari Spritz (Refreshing and Bitter)",
+        },
+        header: {
+          pl: "Campari, prosecco, woda sodowa, pomarańcza",
+          en: "Campari, prosecco, soda water, orange",
+        },
+        price: "32zł",
+        vege: false,
+      },
+      {
+        name: {
+          pl: "Crodino 0% (Wytrawno-Owocowy)",
+          en: "Crodino 0% (dry and fruity)",
+        },
+        header: {
+          pl: "Crodino bezalkoholowe, pomarańcza, woda sodowa",
+          en: "Crodino alcohol-free, orange, soda water",
+        },
+        price: "32zł",
+        vege: false,
+      },
+      {
+        name: {
+          pl: "Green Frog (Słodko-Kwaśny)",
+          en: "Green Frog (Sweet and Sour)",
+        },
+        header: {
+          pl: "Wódka, blue curacco, sok pomarańczowy, owoc",
+          en: "Vodka, blue curacco, orange juice, fruit",
+        },
+        price: "32zł",
         vege: false,
       },
     ],
@@ -900,13 +929,13 @@ const menuData: MenuTypes[] = [
       {
         type: {
           pl: "Piwo Beczkowe",
-          en: "Cask Ale",
+          en: "Draft Beer",
         },
         name: {
           pl: "Żywiec 0.5L",
           en: "Żywiec 0.5L",
         },
-        price: "17zł",
+        price: "18zł",
         vege: false,
       },
       {
@@ -918,7 +947,7 @@ const menuData: MenuTypes[] = [
           pl: "Żywiec 0.5L",
           en: "Żywiec 0.5L",
         },
-        price: "17zł",
+        price: "18zł",
         vege: false,
       },
       {
@@ -930,7 +959,7 @@ const menuData: MenuTypes[] = [
           pl: "Żywiec",
           en: "Żywiec",
         },
-        price: "17zł",
+        price: "18zł",
         vege: false,
       },
       {
@@ -938,7 +967,7 @@ const menuData: MenuTypes[] = [
           pl: "Żywiec białe",
           en: "Żywiec White",
         },
-        price: "17zł",
+        price: "18zł",
         vege: false,
       },
       {
@@ -946,7 +975,7 @@ const menuData: MenuTypes[] = [
           pl: "Heineken",
           en: "Heineken",
         },
-        price: "17zł",
+        price: "18zł",
         vege: false,
       },
       {
@@ -958,7 +987,7 @@ const menuData: MenuTypes[] = [
           pl: "Mango z pomarańczą, cytryna",
           en: "Mango with orange, lemon",
         },
-        price: "17zł",
+        price: "18zł",
         vege: false,
       },
       {
@@ -998,10 +1027,13 @@ const menuData: MenuTypes[] = [
       },
       {
         name: {
-          pl: "Bordinese",
-          en: "Bordinese",
+          pl: "Cabernet Sauvignon",
+          en: "Cabernet Sauvignon",
         },
-        description: { pl: "Montepulciano, Italy", en: "Montepulciano, Italy" },
+        description: {
+          pl: "Select wine daos, medium sweet",
+          en: "Select wine daos, medium sweet",
+        },
 
         price: "79zł",
         bottle: "0,7 L",
@@ -1029,38 +1061,38 @@ const menuData: MenuTypes[] = [
         glassSize: "150ml",
         vege: false,
       },
-      {
-        type: {
-          pl: "Wytrawne",
-          en: "Dry",
-        },
-        name: {
-          pl: "Pinot",
-          en: "Pinot",
-        },
-        description: {
-          pl: "Grigio, Italy",
-          en: "Grigio, Italy",
-        },
+      // {
+      //   type: {
+      //     pl: "Wytrawne",
+      //     en: "Dry",
+      //   },
+      //   name: {
+      //     pl: "Pinot",
+      //     en: "Pinot",
+      //   },
+      //   description: {
+      //     pl: "Grigio, Italy",
+      //     en: "Grigio, Italy",
+      //   },
 
-        price: "79zł",
-        bottle: "0,7 L",
-        glass: "18zł",
-        glassSize: "150ml",
-        vege: false,
-      },
+      //   price: "79zł",
+      //   bottle: "0,7 L",
+      //   glass: "18zł",
+      //   glassSize: "150ml",
+      //   vege: false,
+      // },
       {
         type: {
           pl: "Musujące",
           en: "Sparkling",
         },
         name: {
-          pl: "Prosecco",
-          en: "Prosecco",
+          pl: "Prosecco Lamia, Italy",
+          en: "Prosecco Lamia, Italy",
         },
         description: {
-          pl: "extra dry",
-          en: "extra dry",
+          pl: "",
+          en: "",
         },
 
         price: "79zł",
@@ -1069,22 +1101,22 @@ const menuData: MenuTypes[] = [
         glassSize: "150ml",
         vege: false,
       },
-      {
-        name: {
-          pl: "Adelina",
-          en: "Adelina",
-        },
-        description: {
-          pl: "traviso,Italy",
-          en: "traviso,Italy",
-        },
+      // {
+      //   name: {
+      //     pl: "Adelina",
+      //     en: "Adelina",
+      //   },
+      //   description: {
+      //     pl: "traviso,Italy",
+      //     en: "traviso,Italy",
+      //   },
 
-        price: "79zł",
-        bottle: "0,7 L",
-        glass: "18zł",
-        glassSize: "150ml",
-        vege: false,
-      },
+      //   price: "79zł",
+      //   bottle: "0,7 L",
+      //   glass: "18zł",
+      //   glassSize: "150ml",
+      //   vege: false,
+      // },
     ],
   },
   {

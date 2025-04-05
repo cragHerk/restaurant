@@ -10,7 +10,7 @@ const HomePage: React.FC = () => {
   return (
     <>
       {/* <Breakfast /> */}
-      <Break />
+      {/* <Break /> */}
       <Hero />
       <SectionHeader />
       <Section />

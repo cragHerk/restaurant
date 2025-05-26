@@ -339,6 +339,15 @@ const menuData: MenuTypes[] = [
         vege: true,
       },
       {
+        name: { pl: "Bergamo (ostra)", en: "Bergamo (spicy)" },
+        price: "39zł",
+        description: {
+          pl: "Sos pomidorowy, mozarella, salami, papryka jalapenio",
+          en: "Tomato sauce, mozzarella, salami, jalapenio peppers",
+        },
+        vege: false,
+      },
+      {
         name: { pl: "Verona", en: "Verona" },
         price: "36zł",
         description: {
@@ -369,8 +378,8 @@ const menuData: MenuTypes[] = [
         name: { pl: "Torino (4 sery)", en: "Torino (4 cheeses)" },
         price: "43zł",
         description: {
-          pl: "Sos pomidorowy, mozarella",
-          en: "Tomato sauce, mozzarella",
+          pl: "Sos pomidorowy, mozarella, parmezan, lazur, provolone pikante",
+          en: "Tomato sauce, mozzarella, parmezan, lazur, provolone pikante",
         },
         vege: true,
       },

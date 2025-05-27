@@ -27,8 +27,8 @@
     "adress": "The address of the restaurant is",
     "map": "map",
     "open": "Opening Hours:",
-    "from": "Monday-Friday: 17.00-22.00 ",
-    "to": "Saturday-Sunday: 17.00-22.00"
+    "from": "Friday-Saturday: 16.00-21.00 ",
+    "to": "Sunday-Thursday: 16.00-22.00"
   },
   "MenuHeader": {
     "title1": "Vegetarian dish",

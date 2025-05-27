@@ -36,7 +36,7 @@ const Location = ({
           >
             <span className="flex flex-col xl:flex-row">
               {translations.adress}
-              <span className="text-white opacity-70">Jana Pawła 2, 9</span>
+              <span className="text-white opacity-70">Jana Pawła II, 9</span>
             </span>
             <span> 32-640 Zator</span>
             <a

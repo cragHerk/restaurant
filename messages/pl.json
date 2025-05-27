@@ -27,8 +27,8 @@
     "adress": "Adres restauracji to",
     "map": "mapa",
     "open": "Godziny otwarcia:",
-    "from": "poniedziałek-piątek: 17.00-22.00",
-    "to": "sobota-niedziela: 17.00-22.00"
+    "from": "niedziela-czwartek: 16.00-21.00",
+    "to": "piątek-sobota: 16.00-22.00"
   },
   "MenuHeader": {
     "title1": "Danie wegetariańskie",

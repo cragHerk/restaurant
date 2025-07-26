@@ -94,7 +94,7 @@ const Popup: React.FC<SpringModalProps> = ({
               <span className="text-center py-2  ">{translations.desc3}</span>
               <span className="text-2xl text-g ">
                 {translations.price}
-                <span className="text-white"> 35 zł</span>
+                <span className="text-white"> 39 zł</span>
                 <span className="flex items-center py-2">
                   <FaPhoneVolume color="#a38954" size={25} />
                   <span className="ml-2 font-bold text-white">

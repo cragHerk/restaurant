@@ -9,7 +9,7 @@ import Break from "../components/break/break";
 const HomePage: React.FC = () => {
   return (
     <>
-      <Breakfast />
+      {/* <Breakfast /> */}
       {/* <Break /> */}
       <Hero />
       <SectionHeader />

@@ -649,7 +649,7 @@ const menuData: MenuTypes[] = [
           pl: "Lemoniada Kraftowa 1L",
           en: "Craft Lemonade 1L",
         },
-        price: "32zł",
+        price: "34zł",
         description: {
           pl: "Cytrynowo-miodowa, malinowo-limonkowa",
           en: "Lemon-honey, raspberry-lime",
@@ -673,7 +673,7 @@ const menuData: MenuTypes[] = [
           pl: "Woda Karafka 1L",
           en: "Water Carafe 1L",
         },
-        price: "15zł",
+        price: "18zł",
         description: {
           pl: "Gazowana, niegazowana",
           en: "Carbonated, non-carbonated",
@@ -722,7 +722,7 @@ const menuData: MenuTypes[] = [
           pl: "Ceylon Gold",
           en: "Ceylon Gold",
         },
-        price: "12zł",
+        price: "14zł",
         vege: false,
       },
       {
@@ -730,7 +730,7 @@ const menuData: MenuTypes[] = [
           pl: "Earl Grey",
           en: "Earl Grey",
         },
-        price: "12zł",
+        price: "14zł",
         vege: false,
       },
       {
@@ -738,7 +738,7 @@ const menuData: MenuTypes[] = [
           pl: "Zielona sencha",
           en: "Green Sencha",
         },
-        price: "12zł",
+        price: "14zł",
         vege: false,
       },
       {
@@ -746,7 +746,7 @@ const menuData: MenuTypes[] = [
           pl: "Miętowa",
           en: "Mint",
         },
-        price: "12zł",
+        price: "14zł",
         vege: false,
       },
 
@@ -755,7 +755,7 @@ const menuData: MenuTypes[] = [
           pl: "Owoce leśne",
           en: "Forest Fruits",
         },
-        price: "12zł",
+        price: "14zł",
         vege: false,
       },
     ],
@@ -849,7 +849,7 @@ const menuData: MenuTypes[] = [
           pl: "Sarti, prosecco, woda sodowa, limonka",
           en: "Sarti, prosecco, soda water, lime",
         },
-        price: "32zł",
+        price: "34zł",
         vege: false,
       },
       {
@@ -861,7 +861,7 @@ const menuData: MenuTypes[] = [
           pl: "Wódka, marakuja, ananas, cytryna",
           en: "Vodka, passion fruit, pineapple, lemon",
         },
-        price: "32zł",
+        price: "34zł",
         vege: false,
       },
       {
@@ -873,7 +873,7 @@ const menuData: MenuTypes[] = [
           pl: "Aperol, prosecco, pomarańcza, woda sodowa",
           en: "Aperol, prosecco, orange, soda water",
         },
-        price: "32zł",
+        price: "34zł",
         vege: false,
       },
       {
@@ -885,7 +885,7 @@ const menuData: MenuTypes[] = [
           pl: "Rum, limonka, mięta, cukier trzcinowy, woda sodowa",
           en: "Rum, lime, mint, cane sugar, soda water",
         },
-        price: "32zł",
+        price: "34zł",
         vege: false,
       },
       {
@@ -897,7 +897,7 @@ const menuData: MenuTypes[] = [
           pl: "Campari, prosecco, woda sodowa, pomarańcza",
           en: "Campari, prosecco, soda water, orange",
         },
-        price: "32zł",
+        price: "34zł",
         vege: false,
       },
       {
@@ -909,7 +909,7 @@ const menuData: MenuTypes[] = [
           pl: "Crodino bezalkoholowe, pomarańcza, woda sodowa",
           en: "Crodino alcohol-free, orange, soda water",
         },
-        price: "32zł",
+        price: "34zł",
         vege: false,
       },
       {
@@ -921,7 +921,7 @@ const menuData: MenuTypes[] = [
           pl: "Wódka, blue curacco, sok pomarańczowy, owoc",
           en: "Vodka, blue curacco, orange juice, fruit",
         },
-        price: "32zł",
+        price: "34zł",
         vege: false,
       },
     ],
@@ -944,7 +944,7 @@ const menuData: MenuTypes[] = [
           pl: "Żywiec 0.5L",
           en: "Żywiec 0.5L",
         },
-        price: "18zł",
+        price: "19zł",
         vege: false,
       },
       {
@@ -956,7 +956,7 @@ const menuData: MenuTypes[] = [
           pl: "Żywiec 0.5L",
           en: "Żywiec 0.5L",
         },
-        price: "18zł",
+        price: "19zł",
         vege: false,
       },
       {
@@ -968,7 +968,7 @@ const menuData: MenuTypes[] = [
           pl: "Żywiec",
           en: "Żywiec",
         },
-        price: "18zł",
+        price: "19zł",
         vege: false,
       },
       {
@@ -976,7 +976,7 @@ const menuData: MenuTypes[] = [
           pl: "Żywiec białe",
           en: "Żywiec White",
         },
-        price: "18zł",
+        price: "19zł",
         vege: false,
       },
       {
@@ -984,7 +984,7 @@ const menuData: MenuTypes[] = [
           pl: "Heineken",
           en: "Heineken",
         },
-        price: "18zł",
+        price: "19zł",
         vege: false,
       },
       {
@@ -996,7 +996,7 @@ const menuData: MenuTypes[] = [
           pl: "Mango z pomarańczą, cytryna",
           en: "Mango with orange, lemon",
         },
-        price: "18zł",
+        price: "19zł",
         vege: false,
       },
       {
@@ -1030,7 +1030,7 @@ const menuData: MenuTypes[] = [
         description: { pl: "Tempranillo, Spain", en: "Tempranillo, Spain" },
         price: "59zł",
         bottle: "0,5 L",
-        glass: "18zł",
+        glass: "19zł",
         glassSize: "150ml",
         vege: false,
       },
@@ -1046,7 +1046,7 @@ const menuData: MenuTypes[] = [
 
         price: "79zł",
         bottle: "0,7 L",
-        glass: "18zł",
+        glass: "19zł",
         glassSize: "150ml",
         vege: false,
       },
@@ -1066,7 +1066,7 @@ const menuData: MenuTypes[] = [
 
         price: "59zł",
         bottle: "0,5 L",
-        glass: "18zł",
+        glass: "19zł",
         glassSize: "150ml",
         vege: false,
       },
@@ -1106,7 +1106,7 @@ const menuData: MenuTypes[] = [
 
         price: "79zł",
         bottle: "0,7 L",
-        glass: "18zł",
+        glass: "19zł",
         glassSize: "150ml",
         vege: false,
       },
@@ -1148,7 +1148,7 @@ const menuData: MenuTypes[] = [
         },
         price: "130zł",
         bottle: "0,5 L",
-        glass: "10zł",
+        glass: "11zł",
         glassSize: "40ml",
         vege: false,
       },
@@ -1159,7 +1159,7 @@ const menuData: MenuTypes[] = [
         },
         price: "120zł",
         bottle: "0,5 L",
-        glass: "9zł",
+        glass: "10zł",
         glassSize: "40ml",
         vege: false,
       },

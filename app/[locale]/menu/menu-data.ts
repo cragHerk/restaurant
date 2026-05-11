@@ -60,7 +60,7 @@ const menuData: MenuTypes[] = [
           pl: "Barszcz czerwony",
           en: "Red borscht",
         },
-        price: "25zł",
+        price: "27zł",
         header: { pl: "z uszkami", en: "with ravioli" },
         vege: false,
       },
@@ -69,7 +69,7 @@ const menuData: MenuTypes[] = [
           pl: "Krem czosnkowy",
           en: "Garlic cream",
         },
-        price: "25zł",
+        price: "27zł",
         vege: true,
       },
       {
@@ -77,7 +77,7 @@ const menuData: MenuTypes[] = [
           pl: "Krem z brokułów ",
           en: "Cream of broccoli ",
         },
-        price: "25zł",
+        price: "27zł",
         header: { pl: "z grzankami", en: "with croutons" },
         vege: true,
       },
@@ -86,7 +86,7 @@ const menuData: MenuTypes[] = [
           pl: "Zupa tajska ",
           en: "Thai soup",
         },
-        price: "32zł",
+        price: "34zł",
 
         vege: false,
       },
@@ -105,7 +105,7 @@ const menuData: MenuTypes[] = [
           pl: "Pierogi z mięsem ",
           en: "Dumplings with meat",
         },
-        price: "35zł",
+        price: "37zł",
         header: { pl: "okraszone cebulką", en: "onion-topped" },
         vege: false,
       },
@@ -114,7 +114,7 @@ const menuData: MenuTypes[] = [
           pl: "Pierogi ruskie",
           en: "Russian dumplings",
         },
-        price: "35zł",
+        price: "37zł",
         header: { pl: "z cebulką", en: "with onion" },
         vege: true,
       },
@@ -162,7 +162,7 @@ const menuData: MenuTypes[] = [
           en: "Black tagilatelle",
         },
         header: { pl: "z krewetkami", en: "with shrimps" },
-        price: "55zł",
+        price: "58zł",
         description: {
           pl: "Czosnek, masło, białe wino",
           en: "Garlic, butter, white wine",
@@ -185,7 +185,7 @@ const menuData: MenuTypes[] = [
           pl: "Shoarma drobiowa",
           en: "Poultry shoarma",
         },
-        price: "45zł",
+        price: "47zł",
         description: {
           pl: "Frytki, mix sałat,sos",
           en: "French fries, lettuce mix,dressing",
@@ -219,7 +219,7 @@ const menuData: MenuTypes[] = [
           pl: "Penne rigatoni",
           en: "Penne rigatoni",
         },
-        price: "42zł",
+        price: "44zł",
         description: {
           pl: "kurczak w sosie śmietanowym, szpinak, czosnek, parmezan",
           en: "chicken in cream sauce, spinach, garlic, parmesan",
@@ -231,7 +231,7 @@ const menuData: MenuTypes[] = [
           pl: "Penne chorizo",
           en: "Penne chorizo",
         },
-        price: "45zł",
+        price: "47zł",
         description: {
           pl: "Hiszpańska kiełbasa chorizo, grillowane warzywa, parmezan",
           en: "Spanish chorizo sausage, grilled vegetables, parmesan cheese",
@@ -243,7 +243,7 @@ const menuData: MenuTypes[] = [
           pl: "Agilo olio",
           en: "Agilo olio",
         },
-        price: "32zł",
+        price: "33zł",
         description: {
           pl: "Rukola, pomidorki koktajlowe, oliwa, czosnek",
           en: "Arugula, cherry tomatoes, oil, garlic",
@@ -283,7 +283,7 @@ const menuData: MenuTypes[] = [
           pl: "Klasyczny",
           en: "Classic",
         },
-        price: "49zł",
+        price: "53zł",
         description: {
           pl: "Bułka pszenna, wołowina, cebula, pomidor, ser cheddar, selekcja sałat, sos autorski",
           en: "Wheat roll, beef, onion, tomato, cheddar cheese, lettuce selection, author's dressing",
@@ -292,7 +292,7 @@ const menuData: MenuTypes[] = [
       },
       {
         name: { pl: "Na ostro", en: "Spicy" },
-        price: "52zł",
+        price: "53zł",
         description: {
           pl: "Bułka pszenna, wołowina, cebula, pomidor, ser cheddar, selekcja sałat, jalapeno, sos ostry",
           en: "Wheat roll, beef, onion, tomato, cheddar cheese, lettuce selection, jalapeno, hot sauce",
@@ -301,7 +301,7 @@ const menuData: MenuTypes[] = [
       },
       {
         name: { pl: "Wege", en: "Veggie" },
-        price: "49zł",
+        price: "53zł",
         description: {
           pl: "Bułka pszenna, burger warzywny, cebula,pomidor, selekcja sałat",
           en: "Wheat bun, vegetable burger, onion,tomato, lettuce selection",
@@ -311,7 +311,7 @@ const menuData: MenuTypes[] = [
       {
         name: { pl: "Twins burger", en: "Twins burger" },
 
-        price: "69zł",
+        price: "72zł",
         description: {
           pl: "Bułka pszenna, podwójna wołowina, cebula, pomidor, ser cheddar, ser camembert, selekcja sałat, sos autorski",
           en: "Wheat roll, double beef, onion, tomato, cheddar cheese, camembert cheese, lettuce selection, author's dressing",
@@ -331,7 +331,7 @@ const menuData: MenuTypes[] = [
     items: [
       {
         name: { pl: "Napoli", en: "Napoli" },
-        price: "29zł",
+        price: "31zł",
         description: {
           pl: "Sos pomidorowy, mozarella, oregano",
           en: "Tomato sauce, mozzarella, oregano",
@@ -349,7 +349,7 @@ const menuData: MenuTypes[] = [
       },
       {
         name: { pl: "Verona", en: "Verona" },
-        price: "36zł",
+        price: "37zł",
         description: {
           pl: "Sos pomidorowy, mozarella, szynka, pieczarki, oregano",
           en: "Tomato sauce, mozzarella, ham, mushrooms, oregano",
@@ -358,7 +358,7 @@ const menuData: MenuTypes[] = [
       },
       {
         name: { pl: "Milano", en: "Milano" },
-        price: "39zł",
+        price: "40ł",
         description: {
           pl: "Sos pomidorowy, mozarella, kurczak, szpinak, parmezan",
           en: "Tomato sauce, mozzarella, chicken, spinach, parmesan cheese",
@@ -367,7 +367,7 @@ const menuData: MenuTypes[] = [
       },
       {
         name: { pl: "Roma", en: "Roma" },
-        price: "43zł",
+        price: "45zł",
         description: {
           pl: "Sos pomidorowy, mozarella, szynka, boczek, salami, papryka, oregano",
           en: "Tomato sauce, mozzarella, ham, bacon, salami, peppers, oregano",
@@ -376,7 +376,7 @@ const menuData: MenuTypes[] = [
       },
       {
         name: { pl: "Torino (4 sery)", en: "Torino (4 cheeses)" },
-        price: "43zł",
+        price: "45zł",
         description: {
           pl: "Sos pomidorowy, mozarella, parmezan, lazur, provolone pikante",
           en: "Tomato sauce, mozzarella, parmezan, lazur, provolone pikante",
@@ -423,7 +423,7 @@ const menuData: MenuTypes[] = [
           en: "Penne Pasta",
         },
         header: { pl: "z sosem pomidorowym", en: "with tomato sauce" },
-        price: "19zł",
+        price: "21zł",
         vege: true,
       },
       {
@@ -431,7 +431,7 @@ const menuData: MenuTypes[] = [
           pl: "Stripsy z frytkami",
           en: "Strips with Fries",
         },
-        price: "25zł",
+        price: "27zł",
         vege: false,
       },
       {
@@ -439,7 +439,7 @@ const menuData: MenuTypes[] = [
           pl: "Pierogi na słodko z serem",
           en: "Sweet dumplings with Cheese",
         },
-        price: "23zł",
+        price: "25zł",
         vege: false,
       },
       {
@@ -470,7 +470,7 @@ const menuData: MenuTypes[] = [
           pl: "Frytki",
           en: "Fries",
         },
-        price: "10zł",
+        price: "11zł",
         vege: false,
       },
       {
@@ -478,7 +478,7 @@ const menuData: MenuTypes[] = [
           pl: "Krążki cebulowe",
           en: "Onion Rings",
         },
-        price: "10zł",
+        price: "11zł",
         vege: false,
       },
     ],
@@ -497,7 +497,7 @@ const menuData: MenuTypes[] = [
           pl: "Sałatka cezar",
           en: "Caesar Salad",
         },
-        price: "45zł",
+        price: "47zł",
         description: {
           pl: "Grillowany kurczak, bekon, selekcja sałat, sos czosnkowy, grzanki, pomidorki cherry,parmezan",
           en: "Grilled chicken, bacon, lettuce selection, garlic sauce, croutons, cherry tomatoes,parmesan cheese",
@@ -510,7 +510,7 @@ const menuData: MenuTypes[] = [
           en: "Salad",
         },
         header: { pl: "z polędwiczką wieprzową", en: "with pork tenderloin" },
-        price: "45zł",
+        price: "47zł",
         description: {
           pl: "Selekcja sałat, czosnek, pomidorki cherry, masło ziołowe",
           en: "Lettuce selection, garlic, cherry tomatoes, herb butter",
@@ -522,7 +522,7 @@ const menuData: MenuTypes[] = [
           pl: "Sałatka z falafelem",
           en: "Falafel Salad",
         },
-        price: "42zł",
+        price: "45zł",
         description: {
           pl: "Selekcja sałat, pomidorki cherry, cebula, sos balsamiczny",
           en: "Lettuce selection, cherry tomatoes, onions, balsamic dressing",
@@ -534,7 +534,7 @@ const menuData: MenuTypes[] = [
           pl: "Sałatka z kurczakiem i mango ",
           en: "Chicken Salad with mango",
         },
-        price: "45zł",
+        price: "47zł",
         description: {
           pl: "grillowany kurczak, mango, selekcja sałat, sos ogrodowy,pomidorki",
           en: "grilled chicken, mango, salad selection, garden dressing,tomatoes",
@@ -557,7 +557,7 @@ const menuData: MenuTypes[] = [
           pl: "Szarlotka",
           en: "Apple Cake",
         },
-        price: "26zł",
+        price: "27zł",
         description: {
           pl: "Gałka loda, bita śmietana",
           en: "A scoop of ice cream, whipped cream",
@@ -569,7 +569,7 @@ const menuData: MenuTypes[] = [
           pl: "Brownie",
           en: "Brownie",
         },
-        price: "26zł",
+        price: "27zł",
         description: {
           pl: "Karmel, orzechy, bita śmietana,owoce",
           en: "Caramel, nuts, whipped cream,fruit",
@@ -581,7 +581,7 @@ const menuData: MenuTypes[] = [
           pl: "Pancake ",
           en: "Pancake",
         },
-        price: "26zł",
+        price: "27zł",
         description: { pl: "Bita śmietana, owoce", en: "Whipped cream, fruit" },
         vege: false,
       },
@@ -590,25 +590,25 @@ const menuData: MenuTypes[] = [
           pl: "Lody śmietankowe",
           en: "Creamy Ice Cream",
         },
-        price: "26zł",
+        price: "27zł",
         description: {
           pl: "Bita śmietana, mus malinowy",
           en: "Whipped cream, raspberry mousse",
         },
         vege: false,
       },
-      {
-        name: {
-          pl: "Beza",
-          en: "Meringue cake",
-        },
-        price: "26zł",
-        description: {
-          pl: " Mus malinowy, owoce",
-          en: "Raspberry mousse, fruit",
-        },
-        vege: false,
-      },
+      // {
+      //   name: {
+      //     pl: "Beza",
+      //     en: "Meringue cake",
+      //   },
+      //   price: "27zł",
+      //   description: {
+      //     pl: " Mus malinowy, owoce",
+      //     en: "Raspberry mousse, fruit",
+      //   },
+      //   vege: false,
+      // },
     ],
   },
   {

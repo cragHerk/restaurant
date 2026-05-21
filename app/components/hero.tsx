@@ -117,7 +117,7 @@ const Hero = () => {
         <div className="relative h-[calc(100vh-140px)]">
           <Image
             alt="black burger"
-            src="/hero/black-burger.jpg"
+            src="/hero/black-burger copy.jpg"
             fill
             objectFit="cover"
           />

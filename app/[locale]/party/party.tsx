@@ -129,9 +129,15 @@ export default function Party({
               {/* Chmurka z numerem pod obrazkiem (desktop) */}
               <div className="hidden sm:block">
                 <div className="rounded-2xl bg-white/5 border border-white/10 p-4">
-                  <span className="block text-white font-bold text-base tracking-wide text-center">
-                    {CONTACT_PHONE}
-                  </span>
+                  <a
+                    href={`tel:${CONTACT_PHONE}`}
+                    aria-label="Zadzwoń"
+                    className="block"
+                  >
+                    <span className="block text-white font-bold text-base tracking-wide text-center">
+                      {CONTACT_PHONE}
+                    </span>
+                  </a>
                 </div>
               </div>
             </div>

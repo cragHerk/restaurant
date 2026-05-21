@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: "/",
     languages: {
       "en-US": "/en",
-      "pl-PL": "/PL",
+      "pl-PL": "/pl",
     },
   },
   description:
@@ -20,6 +20,14 @@ export const metadata: Metadata = {
     url: "www.twins-restaurant.pl",
     siteName: "TWINS Restaurant",
     images: [{ url: "/hero/black-burger.jpg", width: 1260, height: 800 }],
+  },
+  icons: {
+    icon: [
+      {
+        url: "/icon.ico",
+        href: "/icon.ico",
+      },
+    ],
   },
 };
 export default function RootLayout({

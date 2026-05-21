@@ -59,7 +59,7 @@ Modal.propTypes = {
       src: PropTypes.string.isRequired,
       thumbnail: PropTypes.string.isRequired,
       alt: PropTypes.string.isRequired,
-    })
+    }),
   ).isRequired,
   currentIndex: PropTypes.number.isRequired,
 };

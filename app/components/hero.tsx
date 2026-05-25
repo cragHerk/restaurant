@@ -1,6 +1,8 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useState } from "react";
+import Link from "next/link";
+import { useLocale } from "next-intl";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useKeenSlider } from "keen-slider/react";
@@ -93,6 +95,27 @@ function DesktopHeroCarousel() {
   );
 }
 
+const MobileLocaleLinks = () => {
+  const locale = useLocale();
+
+  return (
+    <>
+      <Link
+        href={`/${locale}/menu`}
+        className="inline-flex items-center justify-center rounded-full bg-amber-400 px-5 py-2 text-sm font-semibold text-black shadow-sm hover:bg-amber-300 transition"
+      >
+        Zobacz menu
+      </Link>
+      <Link
+        href={`/${locale}/location`}
+        className="inline-flex items-center justify-center rounded-full border border-white/25 bg-white/5 px-5 py-2 text-sm font-semibold text-white hover:bg-white/10 transition"
+      >
+        Lokalizacja
+      </Link>
+    </>
+  );
+};
+
 const Hero = () => {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -114,16 +137,86 @@ const Hero = () => {
       className="pt-[140px]"
     >
       {isMobile ? (
-        <div className="relative h-[calc(100vh-140px)]">
+        <div className="relative h-[60vh] min-h-[360px] max-h-[520px] overflow-hidden">
           <Image
             alt="black burger"
-            src="/hero/black-burger copy.jpg"
+            src="/hero/black-burger.webp"
             fill
+            priority
             objectFit="cover"
+            objectPosition="center top"
+            sizes="(max-width: 1200px) 100vw, 1200px"
           />
+
+          <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/20 to-black/70" />
+
+          <div className="absolute inset-0 flex flex-col justify-end px-4 pb-8">
+            <div className="max-w-[28rem]">
+              <p className="text-sm font-semibold tracking-wide text-amber-200">
+                TWINS RESTAURANT
+              </p>
+              <h1 className="mt-2 text-3xl font-bold leading-tight text-white">
+                Smak, który zostaje w pamięci
+              </h1>
+              <p className="mt-3 text-sm leading-relaxed text-white/90">
+                Burgery, makarony i dania z najlepszych składników — idealne na
+                każdą okazję.
+              </p>
+
+              <div className="mt-5 flex gap-3">
+                <MobileLocaleLinks />
+              </div>
+            </div>
+          </div>
         </div>
       ) : (
-        <DesktopHeroCarousel />
+        <div className="relative">
+          <DesktopHeroCarousel />
+
+          {/* desktop overlay + "interactive" text */}
+          <div className="pointer-events-none absolute inset-0">
+            <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(0,0,0,0.75),rgba(0,0,0,0.25)_45%,rgba(0,0,0,0)_70%)]" />
+
+            <div className="absolute bottom-10 left-0 right-0 mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
+              <div className="max-w-[42rem]">
+                <motion.p
+                  initial={{ opacity: 0, y: 14 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.4 }}
+                  transition={{ duration: 0.55, ease: "easeOut" }}
+                  className="pointer-events-none text-sm font-semibold tracking-wide text-amber-200"
+                >
+                  TWINS RESTAURANT
+                </motion.p>
+
+                <motion.h1
+                  initial={{ opacity: 0, y: 16 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.35 }}
+                  transition={{ duration: 0.65, ease: "easeOut" }}
+                  className="mt-2 text-4xl font-bold leading-tight text-white sm:text-5xl"
+                >
+                  Smak, który zostaje w pamięci
+                </motion.h1>
+
+                <motion.p
+                  initial={{ opacity: 0, y: 16 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.3 }}
+                  transition={{ duration: 0.7, ease: "easeOut" }}
+                  className="mt-4 text-base leading-relaxed text-white/90 sm:text-lg"
+                >
+                  Burgery, makarony i dania z najlepszych składników — idealne
+                  na każdą okazję.
+                </motion.p>
+
+                <div className="mt-6 pointer-events-auto flex gap-3">
+                  <MobileLocaleLinks />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       )}
     </motion.div>
   );

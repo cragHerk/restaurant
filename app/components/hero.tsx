@@ -9,25 +9,25 @@ import "keen-slider/keen-slider.min.css";
 const images = [
   {
     id: 1,
-    mb: "/hero/black-burger.jpg",
-    lg: "/hero/black-burger.jpg",
+    mb: "/hero/black-burger.webp",
+    lg: "/hero/black-burger.webp",
     title: "1.",
   },
   {
     id: 2,
-    mb: "/hero/lemonade-mb.jpg",
-    lg: "/hero/lemonade-lg.jpg",
+    mb: "/hero/lemonade-mb.webp",
+    lg: "/hero/lemonade-lg.webp",
     title: "2",
   },
-  { id: 3, mb: "/hero/pasta-mb.jpg", lg: "/hero/pasta-mb.jpg", title: "3" },
+  { id: 3, mb: "/hero/pasta-mb.webp", lg: "/hero/pasta-mb.webp", title: "3" },
   {
     id: 4,
-    mb: "/hero/purple-dish-mb.jpg",
-    lg: "/hero/purple-dish-lg.jpg",
+    mb: "/hero/purple-dish-mb.webp",
+    lg: "/hero/purple-dish-lg.webp",
     title: "4",
   },
-  { id: 5, mb: "/hero/tomato-mb.jpg", lg: "/hero/tomato-lg.jpg", title: "5" },
-  { id: 6, mb: "/hero/pizza-mb.jpg", lg: "/hero/pizza-lg.jpg", title: "6" },
+  { id: 5, mb: "/hero/tomato-mb.jpg", lg: "/hero/tomato-lg.webp", title: "5" },
+  { id: 6, mb: "/hero/pizza-mb.webp", lg: "/hero/pizza-lg.webp", title: "6" },
 ];
 
 function DesktopHeroCarousel() {

@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
 import Image from "next/image";
@@ -34,6 +34,16 @@ const NavClient = ({
   const handleNav = () => {
     setNav(!nav);
   };
+
+  // Zamykaj mobile nav przy scrollu (tylko nawigacja mobilna)
+  useEffect(() => {
+    const onScroll = () => {
+      if (window.innerWidth < 1024) setNav(false);
+    };
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
   return (
     <nav className="z-20 fixed w-screen flex items-center justify-between h-[140px]   bg-cover  ">
       <div className="flex items-center">

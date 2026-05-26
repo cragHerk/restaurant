@@ -20,9 +20,15 @@ const SectionHeaderClient = ({
 
   return (
     <div id="section-header" className="relative overflow-hidden bg-black/80">
-      {/* background */}
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(255,215,0,0.25),_transparent_55%)]" />
-      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_bottom,rgba(0,0,0,0.0),rgba(0,0,0,0.65))]" />
+      {/* background (match section.ts colors/feel) */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(255,214,10,0.18),_transparent_55%),radial-gradient(ellipse_at_bottom,_rgba(255,214,10,0.10),_transparent_45%)]"
+      />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_bottom,rgba(0,0,0,0),rgba(0,0,0,0.70))]"
+      />
 
       <div className="relative mx-auto flex w-full max-w-6xl items-center justify-center px-4 sm:px-6 pt-6 pb-8 sm:pt-10 sm:pb-10 lg:pt-8 lg:pb-8">
         <div className="grid w-full grid-cols-1 gap-3 sm:gap-4 md:grid-cols-3">

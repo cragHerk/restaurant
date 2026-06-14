@@ -27,8 +27,8 @@
     "adress": "Adres restauracji to",
     "map": "mapa",
     "open": "Godziny otwarcia:",
-    "from": "niedziela-czwartek: 16.00-21.00",
-    "to": "piątek-sobota: 16.00-22.00"
+    "from": "niedziela-czwartek: 17.00-21.00",
+    "to": "piątek-sobota: 17.00-22.00"
   },
   "MenuHeader": {
     "title1": "Danie wegetariańskie",
@@ -40,8 +40,9 @@
     "title1": "IMPREZY",
     "title2": "OKOLICZNOŚCIOWE"
   },
-  "Gallery": { "gallery": "GALERIA" },
-
+  "Gallery": {
+    "gallery": "GALERIA"
+  },
   "Meta": {
     "location": "LOKALIZACJA",
     "party": "IMPREZY OKOLICZNOŚCIOWE",
@@ -53,9 +54,18 @@
     "top": "Śniadania",
     "top2": "w formie bufetu",
     "top3": "breakfast",
-    "desc": "Śniadania Soboty i Niedziele 8-11",
+    "desc": "Śniadania Soboty i Niedziele 8-10",
     "desc2": "Restauracja codziennie 17-21/22",
     "desc3": "Bufet zawiera m.in. wybór pieczywa, jajecznica, przetwory mięsne, wędliny, parówki, frankfurterki, sery, jogurty, nabiał, świeże warzywa i owoce, sałatki, pasta jajeczna, jajka na twardo, płatki śniadaniowe, musli, desery, wybór kaw, herbat, napojów ",
+    "price": "Cena :"
+  },
+  "Breakfast2": {
+    "top": "Śniadania",
+    "top2": "specjalne wydanie",
+    "top3": "breakfast",
+    "desc": "Świeżo przygotowane śniadanie w tygodniowym menu",
+    "desc2": "Dostępne w wybrane dni (zgodnie z broszurą) ",
+    "desc3": "Wybór pieczywa, jajka, sałatki, dodatki sezonowe, słodkie akcenty oraz napoje — wszystko w jednym zestawie.",
     "price": "Cena :"
   },
   "Break": {

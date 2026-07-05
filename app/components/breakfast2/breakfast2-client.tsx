@@ -1,25 +1,32 @@
 "use client";
-import { motion } from "framer-motion";
-import Link from "next/link";
-import { useInView } from "react-intersection-observer";
-import { useLocale } from "next-intl";
+import { FaPhoneVolume } from "react-icons/fa6";
 
-const SectionClientBot = ({
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
+type Breakfast2Translations = {
+  top: string;
+  top2: string;
+  top3: string;
+  desc: string;
+  desc2: string;
+  desc3: string;
+  price: string;
+};
+
+const Breakfast2Client = ({
   translations,
 }: {
-  translations: {
-    title2: string;
-  };
+  translations: Breakfast2Translations;
 }) => {
   const [ref1, inView1] = useInView();
   const [ref2, inView2] = useInView();
   const [ref3, inView3] = useInView();
-  const localActive = useLocale();
 
   return (
     <section
       className="relative flex justify-center items-center flex-col overflow-hidden bg-black text-g py-12"
-      aria-label="Section menu"
+      aria-label="Breakfast2"
     >
       {/* decorative gold gradients */}
       <div
@@ -51,9 +58,9 @@ const SectionClientBot = ({
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: inView2 ? 1 : 0, y: 0 }}
             transition={{ duration: 0.55, delay: 0.1, ease: "easeOut" }}
-            className="text-center text-4xl sm:text-5xl md:text-6xl font-bold font-serif tracking-tight text-white"
+            className="text-center text-4xl sm:text-5xl font-bold font-serif tracking-tight text-white"
           >
-            MENU
+            {translations.top}
           </motion.h1>
 
           <motion.span
@@ -62,7 +69,7 @@ const SectionClientBot = ({
             transition={{ duration: 0.5, delay: 0.15, ease: "easeOut" }}
             className="text-center block text-g text-2xl sm:text-3xl underline p-1"
           >
-            {translations.title2}
+            {translations.top2}
           </motion.span>
 
           <motion.div
@@ -72,17 +79,33 @@ const SectionClientBot = ({
             transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
             className="mt-4 flex flex-col items-center justify-center"
           >
-            <div className="relative">
-              {/* wyróżnik - złota poświata pod buttonem */}
-              <div className="absolute -inset-x-10 -bottom-2 h-12 bg-gradient-to-r from-gold/30 via-gold/10 to-transparent blur-xl opacity-60" />
-              <Link href={`/${localActive}/menu`} className="relative z-10">
-                <button
-                  type="button"
-                  className="m-2 sm:m-2 px-[16px] sm:px-[18px] py-[12px] sm:py-[13px] md:py-[14px] min-w-[170px] sm:min-w-[220px] rounded-xl text-lg sm:text-xl md:text-2xl font-extrabold cursor-pointer ring-1 ring-gold/30 transition-all duration-300 hover:scale-[1.06] hover:brightness-110 active:scale-[1.02] bg-black/20 backdrop-blur"
-                >
-                  Menu
-                </button>
-              </Link>
+            <div className="flex flex-wrap items-center justify-center gap-2">
+              <span className="border border-white/25 rounded py-1 px-3 text-white/90">
+                {translations.desc}
+              </span>
+              <span className="border border-white/25 rounded py-1 px-3 text-white/90">
+                {translations.desc2}
+              </span>
+            </div>
+
+            <span className="text-center py-3 text-white/80 max-w-xl">
+              {translations.desc3}
+            </span>
+
+            <div className="mt-2 text-2xl text-g text-center">
+              {translations.price}
+              <span className="text-white"> 39 zł</span>
+
+              <div className="flex items-center justify-center py-2">
+                <FaPhoneVolume color="#a38954" size={25} />
+                <span className="ml-2 font-bold text-white">
+                  +48 536 265 668
+                </span>
+              </div>
+
+              <span className="text-white border border-white/25 px-3 py-1 mt-4 rounded text-sm sm:text-base inline-block">
+                Zator, Jana Pawła II 9/LU3
+              </span>
             </div>
           </motion.div>
         </motion.div>
@@ -91,4 +114,4 @@ const SectionClientBot = ({
   );
 };
 
-export default SectionClientBot;
+export default Breakfast2Client;
